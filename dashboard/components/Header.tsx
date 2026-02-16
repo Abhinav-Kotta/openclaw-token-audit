@@ -64,7 +64,7 @@ export default function Header({ onRefresh }: HeaderProps) {
           <div className="hidden md:flex items-center space-x-8">
             <nav className="flex items-center space-x-6">
               <motion.a
-                href="/dashboard"
+                href="/"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="text-text-primary font-medium hover:text-primary-400 transition-colors relative"
@@ -150,7 +150,7 @@ export default function Header({ onRefresh }: HeaderProps) {
           className="md:hidden overflow-hidden border-t border-primary-500/20"
         >
           <div className="py-3 space-y-2">
-            <a href="/dashboard" className="block py-2 text-text-primary font-medium">
+            <a href="/" className="block py-2 text-text-primary font-medium">
               Dashboard
             </a>
             <a href="#" className="block py-2 text-text-secondary">

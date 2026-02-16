@@ -33,12 +33,6 @@
       ]
     }
   ],
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/dashboard"
-    }
-  ],
   "functions": {
     "app/api/token-data/route.ts": {
       "maxDuration": 10
