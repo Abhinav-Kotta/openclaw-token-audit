@@ -20,8 +20,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.className} bg-background-primary text-text-primary antialiased`}>
-        <div className="min-h-screen bg-gradient-to-br from-background-primary via-background-secondary to-background-tertiary">
+      <body className={`${inter.className} antialiased`} style={{ backgroundColor: '#0f0f23', color: '#ffffff', minHeight: '100vh' }}>
+        <div className="min-h-screen" style={{ background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a3a 50%, #2a2a4a 100%)' }}>
           {children}
         </div>
       </body>
