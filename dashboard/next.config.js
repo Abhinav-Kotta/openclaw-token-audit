@@ -2,10 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'standalone',
-  experimental: {
-    appDir: true,
-  },
   images: {
     unoptimized: true,
   },
@@ -26,16 +22,7 @@ const nextConfig = {
       },
     ];
   },
-  // Redirect root to dashboard
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/dashboard',
-        permanent: true,
-      },
-    ];
-  },
+  // Simple redirect handled by page.tsx
 };
 
 module.exports = nextConfig;

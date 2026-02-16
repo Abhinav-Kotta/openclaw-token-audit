@@ -8,5 +8,6 @@
     "collector": "cd collector && node index.js",
     "audit": "cd collector && node daily-audit.js"
   },
-  "workspaces": ["collector", "dashboard"]
+  "workspaces": ["collector", "dashboard"],
+  "private": true
 }
