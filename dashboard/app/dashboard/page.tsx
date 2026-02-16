@@ -12,10 +12,10 @@ import {
   TrendingUp, 
   Zap 
 } from 'lucide-react';
-import StatsCard from '../../components/StatsCard';
-import TokenChart from '../../components/TokenChart';
-import SessionsTable from '../../components/SessionsTable';
-import Header from '../../components/Header';
+import StatsCard from '@/components/StatsCard';
+import TokenChart from '@/components/TokenChart';
+import SessionsTable from '@/components/SessionsTable';
+import Header from '@/components/Header';
 
 interface TokenData {
   sessions: any[];
