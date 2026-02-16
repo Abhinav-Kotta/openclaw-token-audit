@@ -9,13 +9,13 @@ Beautiful anime-style dashboard for tracking OpenClaw token usage with comprehen
 
 ## Quick Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/openclaw-token-audit)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Abhinav-Kotta/openclaw-token-audit)
 
 ## Local Development
 
 ```bash
 # Clone and install
-git clone https://github.com/yourusername/openclaw-token-audit
+git clone https://github.com/Abhinav-Kotta/openclaw-token-audit
 cd openclaw-token-audit
 npm install
 
