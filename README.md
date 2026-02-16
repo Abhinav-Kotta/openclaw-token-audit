@@ -4,12 +4,40 @@ Beautiful anime-style dashboard for tracking OpenClaw token usage with comprehen
 
 ## Components
 - **Collector**: Node.js service for token data collection
-- **Dashboard**: Next.js app with peachy anime aesthetic
+- **Dashboard**: Next.js app with peachy anime aesthetic  
 - **Automation**: Nightly GitHub pushes and optimization tracking
 
-## Setup
+## Quick Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/openclaw-token-audit)
+
+## Local Development
+
 ```bash
+# Clone and install
+git clone https://github.com/yourusername/openclaw-token-audit
+cd openclaw-token-audit
 npm install
-npm run collector  # Start token collection
-npm run dev       # Start dashboard
+
+# Configure environment
+cp .env.example .env
+# Edit .env with your OpenClaw Gateway settings
+
+# Start collector (background data collection)
+npm run collector
+
+# Start dashboard (development)
+npm run dev
 ```
+
+## Deployment
+
+This project is optimized for Vercel deployment with zero configuration. The dashboard will automatically build and deploy, while the collector can run as a separate service or cron job.
+
+## Features
+
+- 🎌 Anime-themed UI with beautiful visualizations
+- 📊 Real-time token usage tracking
+- 🔄 Automated data collection and archival
+- 📈 Historical usage analytics
+- 🚀 One-click Vercel deployment
