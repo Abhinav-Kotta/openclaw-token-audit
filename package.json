@@ -1,37 +1,22 @@
 {
-  "name": "openclaw-token-audit-dashboard",
+  "name": "openclaw-token-collector",
   "version": "1.0.0",
-  "description": "Anime-themed dashboard for OpenClaw Token Audit system",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next build && next export"
-  },
+  "main": "index.js",
   "dependencies": {
-    "next": "^14.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "recharts": "^2.12.0",
-    "lucide-react": "^0.321.0",
-    "date-fns": "^3.3.1",
-    "clsx": "^2.1.0",
-    "framer-motion": "^11.0.5"
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.3",
+    "@octokit/rest": "^20.0.2"
   },
-  "devDependencies": {
-    "@types/node": "^20.11.0",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
-    "autoprefixer": "^10.4.17",
-    "eslint": "^8.56.0",
-    "eslint-config-next": "^14.1.0",
-    "postcss": "^8.4.33",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
-  },
-  "engines": {
-    "node": ">=18.0.0"
+  "scripts": {
+    "start": "node index.js",
+    "audit": "node daily-audit.js",
+    "collect": "node run-collector.js",
+    "collect:watch": "node run-collector.js --watch",
+    "push": "node push-to-github.js",
+    "collect:and:push": "node run-collector.js && node push-to-github.js",
+    "cron:install": "node setup-cron.js --install",
+    "cron:remove": "node setup-cron.js --remove",
+    "cron:list": "node setup-cron.js --list"
   }
 }

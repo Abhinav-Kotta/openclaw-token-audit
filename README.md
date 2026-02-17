@@ -1,286 +1,210 @@
-# OpenClaw Token Audit Dashboard
+# 🌸 OpenClaw Token Collector
 
-A modern, anime-themed Next.js dashboard for monitoring OpenClaw token usage and analytics with real-time data visualization.
+A robust Node.js service that collects and analyzes OpenClaw token usage data with intelligent API integration, rate limiting, and comprehensive reporting.
 
-## 🌟 Features
+## ✨ Features
 
-- **Real-time Analytics**: Live token usage monitoring with auto-refresh
-- **Anime-themed UI**: Beautiful gradient designs with smooth animations
-- **Responsive Charts**: Interactive visualizations using Recharts
-- **Session Tracking**: Detailed session information and agent analytics
-- **Modern Stack**: Built with Next.js 14, TypeScript, and Tailwind CSS
-- **Vercel Ready**: Optimized for seamless deployment to Vercel
+- **Smart Data Collection**: Automatically detects and adapts to available data sources
+- **Rate Limiting**: Built-in protection with max 30k tokens/minute and 5-second delays
+- **Error Handling**: Comprehensive retry logic and graceful fallback mechanisms
+- **Data Storage**: Structured JSON storage with daily archives
+- **Real-time Simulation**: Generates realistic data patterns when APIs are unavailable
+- **Automated Reporting**: Daily and weekly audit reports in JSON and Markdown formats
+- **Scheduled Tasks**: Automated archival and reporting using cron jobs
 
 ## 🚀 Quick Start
 
-### Prerequisites
-
-- Node.js 18+ 
-- npm or yarn
-
 ### Installation
-
-1. **Install dependencies**
-   ```bash
-   cd dashboard
-   npm install
-   ```
-
-2. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-3. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
-
-### Production Build
-
 ```bash
-npm run build
+npm install
+```
+
+### Configuration
+Copy the example environment file and configure:
+```bash
+cp .env.example .env
+# Edit .env with your settings
+```
+
+### Running the Collector
+```bash
+# Start continuous collection
 npm start
+
+# Or run directly
+node index.js
+
+# Generate daily audit report
+npm run audit
 ```
 
-## 📊 Data Sources
+## 📊 Data Collection Strategy
 
-The dashboard reads token usage data from the collector service located at:
-- `../collector/data/latest.json` (primary)
-- Falls back to mock data if collector data is unavailable
+The collector uses a multi-layered approach to gather token usage data:
 
-### Expected Data Format
+1. **Log File Analysis**: Scans OpenClaw logs for usage patterns
+2. **API Integration**: Attempts connection to various OpenClaw endpoints:
+   - `/api/session/status`
+   - `/api/stats` 
+   - `/session_status`
+   - `/api/usage`
+3. **Intelligent Simulation**: Generates realistic usage patterns based on time and usage patterns
 
-```json
-{
-  "sessions": [...],
-  "tools": {...},
-  "agents": {...},
-  "channels": {...},
-  "tokenUsage": {
-    "daily": {...},
-    "hourly": {...},
-    "total": {...}
-  }
-}
-```
-
-## 🎨 UI Components
-
-### StatsCard
-Animated statistics cards with trend indicators and glow effects.
-
-### TokenChart
-Interactive area/line charts showing token usage over time.
-
-### SessionsTable
-Responsive table displaying recent sessions with filtering.
-
-### Header
-Navigation header with refresh functionality and notifications.
-
-## 🎭 Anime Theme
-
-The dashboard features a carefully crafted anime aesthetic:
-
-- **Color Palette**: Pink/Blue/Yellow gradient scheme
-- **Typography**: Inter font with JetBrains Mono for numbers
-- **Animations**: Framer Motion for smooth transitions
-- **Effects**: Glow, float, and pulse animations
-
-### Color Scheme
-
-```css
---primary: Pink (#ec4899)
---secondary: Blue (#0ea5e9)  
---accent: Yellow (#facc15)
---background: Dark gradients
-```
-
-## 🔧 Configuration
+## 🔧 Configuration Options
 
 ### Environment Variables
-
-Create `.env.local` for local development:
-
 ```bash
-NEXT_PUBLIC_APP_NAME="OpenClaw Token Audit"
-NEXT_PUBLIC_APP_VERSION="1.0.0"
+# OpenClaw Gateway Configuration
+OPENCLAW_GATEWAY_URL=http://localhost:18789
+OPENCLAW_TOKEN=your_openclaw_token
+
+# GitHub Integration (for automated reporting)
+GITHUB_TOKEN=your_github_pat_token
+GITHUB_REPO_OWNER=your_username
+GITHUB_REPO_NAME=openclaw-token-audit
 ```
 
-### Next.js Configuration
+## 📈 Rate Limiting
 
-Key features in `next.config.js`:
-- Standalone output for deployment
-- CORS headers for API routes
-- Automatic redirects
-- Image optimization
+The collector implements sophisticated rate limiting to prevent overwhelming the OpenClaw gateway:
 
-## 📱 Responsive Design
+- **Token Budget**: Maximum 30,000 tokens per minute
+- **Request Delays**: 5-second intervals between API calls
+- **Exponential Backoff**: Progressive retry delays on failures
+- **Smart Queuing**: Automatic budget reset every minute
 
-The dashboard is fully responsive with:
-- Mobile-first approach
-- Adaptive layouts
-- Touch-friendly interactions
-- Optimized for all screen sizes
+## 📁 Data Structure
 
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-1. **Connect your repository to Vercel**
-2. **Configure build settings**:
-   - Framework: Next.js
-   - Root Directory: `dashboard`
-   - Build Command: `npm run build`
-   - Output Directory: `.next`
-
-3. **Deploy**
-   Vercel will automatically deploy on git push.
-
-### Manual Deployment
-
-```bash
-npm run build
-npm start
+### Storage Organization
+```
+collector/
+├── data/
+│   ├── latest.json              # Current data snapshot
+│   ├── token-data-YYYY-MM-DD.json  # Daily data files
+│   ├── archives/                # Historical archives
+│   └── collection.log           # Activity log
+└── reports/
+    ├── audit-YYYY-MM-DD.json    # Daily reports (JSON)
+    ├── audit-YYYY-MM-DD.md      # Daily reports (Markdown)
+    └── weekly-YYYY-MM-DD.json   # Weekly analysis
 ```
 
-Or export static files:
-
-```bash
-npm run export
-```
-
-## 🔌 API Routes
-
-### GET /api/token-data
-
-Returns current token usage statistics.
-
-**Response:**
-```json
-{
-  "sessions": [...],
-  "tokenUsage": {...},
-  "agents": {...},
-  "channels": {...}
-}
-```
-
-**Error Handling:**
-- Graceful fallback to mock data
-- CORS enabled
-- Error details in development
-
-## 🎯 Performance
-
-### Optimizations
-
-- **Code Splitting**: Automatic with Next.js
-- **Image Optimization**: Built-in Next.js features
-- **Bundle Analysis**: Use `npm run analyze`
-- **Caching**: Aggressive API response caching
-- **Lazy Loading**: Components loaded on demand
-
-### Monitoring
-
-Built-in performance monitoring:
-- Core Web Vitals tracking
-- Real User Monitoring ready
-- Performance profiling in dev mode
-
-## 🧪 Development
-
-### Project Structure
-
-```
-dashboard/
-├── app/                    # Next.js 13+ App Router
-│   ├── api/               # API routes
-│   ├── dashboard/         # Main dashboard page
-│   └── layout.tsx         # Root layout
-├── components/            # React components
-├── styles/               # Global CSS
-├── public/               # Static assets
-└── lib/                  # Utility functions
-```
-
-### Code Style
-
-- **TypeScript**: Strict type checking
-- **ESLint**: Next.js recommended rules
-- **Prettier**: Automatic formatting
-- **Conventional Commits**: Standardized commit messages
-
-### Development Commands
-
-```bash
-npm run dev          # Start dev server
-npm run build        # Production build  
-npm run start        # Start production server
-npm run lint         # Run ESLint
-npm run type-check   # TypeScript checking
-```
-
-## 🎨 Customization
-
-### Themes
-
-Modify colors in `tailwind.config.js`:
-
+### Data Format
 ```javascript
-theme: {
-  extend: {
-    colors: {
-      primary: {...},
-      secondary: {...},
-      accent: {...}
-    }
-  }
+{
+  "sessions": [/* Session records */],
+  "tokenUsage": {
+    "total": { "tokensIn": 0, "tokensOut": 0, "context": 0 },
+    "daily": { "2026-02-16": { /* daily usage */ } },
+    "hourly": { "2026-02-16T14": { /* hourly usage */ } }
+  },
+  "agents": { "claude-sonnet": 45, "gpt-4": 23 },
+  "channels": { "webchat": 32, "api": 18 },
+  "tools": { "browser": 12, "exec": 8 }
 }
 ```
 
-### Components
+## 🛠️ API Methods
 
-All components are modular and customizable:
-- Props-based configuration
-- CSS classes via Tailwind
-- Animation controls via Framer Motion
+### Core Methods
+```javascript
+const collector = new TokenCollector();
 
-## 📚 Dependencies
+// Start continuous collection
+await collector.startCollection();
 
-### Core
-- **Next.js 14**: React framework
-- **React 18**: UI library
-- **TypeScript**: Type safety
+// Get current data snapshot
+const data = collector.getLatestData();
 
-### UI & Styling  
-- **Tailwind CSS**: Utility-first CSS
-- **Framer Motion**: Animation library
-- **Lucide React**: Icon library
-- **Recharts**: Chart library
+// Get current token usage totals
+const usage = collector.getCurrentUsage();
 
-### Utilities
-- **date-fns**: Date manipulation
-- **clsx**: Conditional classes
+// Get historical data (last N days)
+const history = await collector.getHistoricalData(7);
 
-## 🤝 Contributing
+// Generate daily report
+const audit = new DailyAudit();
+const report = await audit.generateDailyReport();
+```
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+## 📋 Testing
 
-## 📄 License
+### Run Tests
+```bash
+# Quick functionality test
+node quick-test.js
 
-This project is part of the OpenClaw ecosystem.
+# Full integration test
+node test-collector.js
+```
 
-## 📞 Support
+### Test Coverage
+- ✅ Data collection and simulation
+- ✅ Rate limiting functionality  
+- ✅ Error handling and retries
+- ✅ Data storage and retrieval
+- ✅ Report generation
+- ✅ API endpoint detection
 
-For support and questions:
-- Check the documentation
-- Open an issue on GitHub
-- Contact the OpenClaw team
+## 🔄 Automation Features
+
+### Scheduled Tasks
+- **Continuous Collection**: Every 5 seconds during active periods
+- **Daily Archives**: Automated at midnight (cron: `0 0 * * *`)
+- **Hourly Summaries**: Status reports every hour (cron: `0 * * * *`)
+- **Weekly Analysis**: Comprehensive reports on Sundays
+
+### Error Recovery
+- Automatic retry with exponential backoff
+- Graceful fallback to simulation data
+- Persistent storage across restarts
+- Comprehensive logging for debugging
+
+## 🌟 Advanced Features
+
+### Intelligent Simulation
+When real data is unavailable, the collector generates realistic patterns:
+- **Time-based Variations**: Higher usage during business hours
+- **Random Agent Selection**: Rotates between available AI models  
+- **Channel Distribution**: Simulates usage across different interfaces
+- **Realistic Token Ranges**: Based on typical usage patterns
+
+### Performance Optimization
+- **Memory Efficient**: Streaming data processing for large datasets
+- **Async Operations**: Non-blocking I/O for all file operations
+- **Background Processing**: Separated collection from reporting tasks
+- **Graceful Shutdown**: Clean process termination with data preservation
+
+## 🔍 Monitoring and Logging
+
+### Log Levels
+- **INFO**: Normal operations and status updates
+- **WARN**: Non-critical issues and fallback activations  
+- **ERROR**: Critical errors requiring attention
+
+### Key Metrics Tracked
+- Token usage (in/out/context) per session, hour, and day
+- Agent utilization across different AI models
+- Channel distribution (webchat, API, CLI, etc.)
+- Tool usage frequency and patterns
+- Error rates and API availability
+
+## 🤝 Integration
+
+### Dashboard Integration
+The collector provides data for the anime-style dashboard:
+```javascript
+// Get data for dashboard
+const dashboardData = {
+  current: collector.getCurrentUsage(),
+  recent: collector.getLatestData().sessions.slice(-24),
+  trends: await collector.getHistoricalData(7)
+};
+```
+
+### GitHub Automation
+Automated repository updates with daily audit results (configured via environment variables).
 
 ---
 
-Built with ❤️ for the OpenClaw ecosystem
+*Built with 🌸 for the OpenClaw Token Audit System*

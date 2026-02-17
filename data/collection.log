@@ -1,0 +1,114 @@
+[2026-02-16T22:02:34.183Z] [INFO] 🔍 Collecting session status data...
+[2026-02-16T22:02:34.184Z] [INFO] 🌸 Token Collector initialized
+[2026-02-16T22:03:10.931Z] [INFO] 🔍 Collecting session status data...
+[2026-02-16T22:03:10.933Z] [INFO] 🌸 Token Collector initialized
+[2026-02-16T22:03:10.934Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-16T22:03:10.961Z] [WARN] 🔄 Attempt 1 failed, retrying in 2s: Endpoint returned text/html; charset=utf-8, expected JSON
+[2026-02-16T22:03:12.976Z] [WARN] 🔄 Attempt 2 failed, retrying in 4s: Endpoint returned text/html; charset=utf-8, expected JSON
+[2026-02-16T22:03:16.992Z] [WARN] 🔄 Attempt 1 failed, retrying in 2s: Endpoint returned text/html; charset=utf-8, expected JSON
+[2026-02-16T22:03:19.006Z] [WARN] 🔄 Attempt 2 failed, retrying in 4s: Endpoint returned text/html; charset=utf-8, expected JSON
+[2026-02-16T22:03:23.026Z] [WARN] 🔄 Attempt 1 failed, retrying in 2s: Endpoint returned text/html; charset=utf-8, expected JSON
+[2026-02-16T22:03:25.041Z] [WARN] 🔄 Attempt 2 failed, retrying in 4s: Endpoint returned text/html; charset=utf-8, expected JSON
+[2026-02-16T22:03:37.623Z] [INFO] 🌸 Token Collector initialized
+[2026-02-16T22:03:37.624Z] [INFO] 🔍 Collecting session status data...
+[2026-02-16T22:03:37.625Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-16T22:03:37.649Z] [WARN] 🔄 Attempt 1 failed, retrying in 2s: Endpoint returned text/html; charset=utf-8, expected JSON
+[2026-02-16T22:03:39.664Z] [WARN] 🔄 Attempt 2 failed, retrying in 4s: Endpoint returned text/html; charset=utf-8, expected JSON
+[2026-02-16T22:03:43.682Z] [WARN] 🔄 Attempt 1 failed, retrying in 2s: Endpoint returned text/html; charset=utf-8, expected JSON
+[2026-02-16T22:03:45.696Z] [WARN] 🔄 Attempt 2 failed, retrying in 4s: Endpoint returned text/html; charset=utf-8, expected JSON
+[2026-02-16T22:03:49.714Z] [WARN] 🔄 Attempt 1 failed, retrying in 2s: Endpoint returned text/html; charset=utf-8, expected JSON
+[2026-02-16T22:03:51.729Z] [WARN] 🔄 Attempt 2 failed, retrying in 4s: Endpoint returned text/html; charset=utf-8, expected JSON
+[2026-02-16T22:04:04.067Z] [INFO] 🌸 Token Collector initialized
+[2026-02-16T22:04:04.069Z] [INFO] 🔍 Collecting session status data...
+[2026-02-16T22:04:04.070Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-16T22:04:04.099Z] [WARN] ⚠️  Endpoint /api/session/status returns HTML, skipping
+[2026-02-16T22:04:04.110Z] [WARN] ⚠️  Endpoint /api/stats returns HTML, skipping
+[2026-02-16T22:04:04.116Z] [WARN] ⚠️  Endpoint /session_status returns HTML, skipping
+[2026-02-16T22:04:04.119Z] [WARN] ⚠️  Endpoint /stats returns HTML, skipping
+[2026-02-16T22:04:04.122Z] [WARN] ⚠️  Endpoint /api/v1/session returns HTML, skipping
+[2026-02-16T22:04:04.125Z] [WARN] ⚠️  Endpoint /api/usage returns HTML, skipping
+[2026-02-16T22:04:04.126Z] [WARN] 📡 No JSON API endpoints found, falling back to simulation
+[2026-02-16T22:04:04.126Z] [WARN] 📊 Using simulated data (no data sources accessible)
+[2026-02-16T22:04:04.127Z] [INFO] 📈 Collected: 405 in, 643 out, 101 context
+[2026-02-16T22:04:08.334Z] [INFO] 🌸 Token Collector initialized
+[2026-02-16T22:04:08.336Z] [INFO] 📂 Loaded existing data
+[2026-02-17T18:47:10.886Z] [INFO] 🌸 Token Collector initialized
+[2026-02-17T18:47:10.887Z] [INFO] 📂 Loaded existing data
+[2026-02-17T18:47:32.850Z] [INFO] 🌸 Token Collector initialized
+[2026-02-17T18:47:32.852Z] [INFO] 📂 Loaded existing data
+[2026-02-17T18:47:32.853Z] [INFO] 🔍 Collecting session status data...
+[2026-02-17T18:47:32.856Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-17T18:47:32.906Z] [WARN] ⚠️  Endpoint /api/session/status returns HTML, skipping
+[2026-02-17T18:47:32.910Z] [WARN] ⚠️  Endpoint /api/stats returns HTML, skipping
+[2026-02-17T18:47:32.912Z] [WARN] ⚠️  Endpoint /session_status returns HTML, skipping
+[2026-02-17T18:47:32.914Z] [WARN] ⚠️  Endpoint /stats returns HTML, skipping
+[2026-02-17T18:47:32.917Z] [WARN] ⚠️  Endpoint /api/v1/session returns HTML, skipping
+[2026-02-17T18:47:32.919Z] [WARN] ⚠️  Endpoint /api/usage returns HTML, skipping
+[2026-02-17T18:47:32.919Z] [WARN] 📡 No JSON API endpoints found, falling back to simulation
+[2026-02-17T18:47:32.919Z] [WARN] 📊 Using simulated data (no data sources accessible)
+[2026-02-17T18:47:32.920Z] [INFO] 📈 Collected: 207 in, 994 out, 92 context
+[2026-02-17T18:47:58.413Z] [INFO] 🌸 Token Collector initialized
+[2026-02-17T18:47:58.414Z] [INFO] 📂 Loaded existing data
+[2026-02-17T18:47:58.416Z] [INFO] 🔍 Collecting session status data...
+[2026-02-17T18:47:58.416Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-17T18:47:58.455Z] [WARN] ⚠️  Endpoint /api/session/status returns HTML, skipping
+[2026-02-17T18:47:58.459Z] [WARN] ⚠️  Endpoint /api/stats returns HTML, skipping
+[2026-02-17T18:47:58.462Z] [WARN] ⚠️  Endpoint /session_status returns HTML, skipping
+[2026-02-17T18:47:58.465Z] [WARN] ⚠️  Endpoint /stats returns HTML, skipping
+[2026-02-17T18:47:58.468Z] [WARN] ⚠️  Endpoint /api/v1/session returns HTML, skipping
+[2026-02-17T18:47:58.471Z] [WARN] ⚠️  Endpoint /api/usage returns HTML, skipping
+[2026-02-17T18:47:58.471Z] [WARN] 📡 No JSON API endpoints found, falling back to simulation
+[2026-02-17T18:47:58.472Z] [WARN] 📊 Using simulated data (no data sources accessible)
+[2026-02-17T18:47:58.472Z] [INFO] 📈 Collected: 477 in, 279 out, 152 context
+[2026-02-17T18:48:11.037Z] [INFO] 🌸 Token Collector initialized
+[2026-02-17T18:48:11.038Z] [INFO] 📂 Loaded existing data
+[2026-02-17T18:48:11.040Z] [INFO] 🔍 Collecting session status data...
+[2026-02-17T18:48:11.040Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-17T18:48:11.078Z] [WARN] ⚠️  Endpoint /api/session/status returns HTML, skipping
+[2026-02-17T18:48:11.083Z] [WARN] ⚠️  Endpoint /api/stats returns HTML, skipping
+[2026-02-17T18:48:11.086Z] [WARN] ⚠️  Endpoint /session_status returns HTML, skipping
+[2026-02-17T18:48:11.089Z] [WARN] ⚠️  Endpoint /stats returns HTML, skipping
+[2026-02-17T18:48:11.092Z] [WARN] ⚠️  Endpoint /api/v1/session returns HTML, skipping
+[2026-02-17T18:48:11.095Z] [WARN] ⚠️  Endpoint /api/usage returns HTML, skipping
+[2026-02-17T18:48:11.095Z] [WARN] 📡 No JSON API endpoints found, falling back to simulation
+[2026-02-17T18:48:11.096Z] [WARN] 📊 Using simulated data (no data sources accessible)
+[2026-02-17T18:48:11.097Z] [INFO] 📈 Collected: 338 in, 918 out, 102 context
+[2026-02-17T18:50:01.165Z] [INFO] 🌸 Token Collector initialized
+[2026-02-17T18:50:01.172Z] [INFO] 📂 Loaded existing data
+[2026-02-17T18:50:01.173Z] [INFO] 🔍 Collecting session status data...
+[2026-02-17T18:50:01.174Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-17T18:50:01.237Z] [WARN] ⚠️  Endpoint /api/session/status returns HTML, skipping
+[2026-02-17T18:50:01.243Z] [WARN] ⚠️  Endpoint /api/stats returns HTML, skipping
+[2026-02-17T18:50:01.246Z] [WARN] ⚠️  Endpoint /session_status returns HTML, skipping
+[2026-02-17T18:50:01.249Z] [WARN] ⚠️  Endpoint /stats returns HTML, skipping
+[2026-02-17T18:50:01.252Z] [WARN] ⚠️  Endpoint /api/v1/session returns HTML, skipping
+[2026-02-17T18:50:01.255Z] [WARN] ⚠️  Endpoint /api/usage returns HTML, skipping
+[2026-02-17T18:50:01.256Z] [WARN] 📡 No JSON API endpoints found, falling back to simulation
+[2026-02-17T18:50:01.256Z] [WARN] 📊 Using simulated data (no data sources accessible)
+[2026-02-17T18:50:01.257Z] [INFO] 📈 Collected: 229 in, 627 out, 179 context
+[2026-02-17T18:58:49.295Z] [INFO] 🌸 Token Collector initialized
+[2026-02-17T18:58:49.296Z] [INFO] 📂 Loaded existing data
+[2026-02-17T18:58:49.297Z] [INFO] 🔍 Collecting session status data...
+[2026-02-17T18:58:49.297Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-17T18:58:49.331Z] [WARN] ⚠️  Endpoint /api/session/status returns HTML, skipping
+[2026-02-17T18:58:49.334Z] [WARN] ⚠️  Endpoint /api/stats returns HTML, skipping
+[2026-02-17T18:58:49.337Z] [WARN] ⚠️  Endpoint /session_status returns HTML, skipping
+[2026-02-17T18:58:49.339Z] [WARN] ⚠️  Endpoint /stats returns HTML, skipping
+[2026-02-17T18:58:49.341Z] [WARN] ⚠️  Endpoint /api/v1/session returns HTML, skipping
+[2026-02-17T18:58:49.344Z] [WARN] ⚠️  Endpoint /api/usage returns HTML, skipping
+[2026-02-17T18:58:49.344Z] [WARN] 📡 No JSON API endpoints found, falling back to simulation
+[2026-02-17T18:58:49.344Z] [WARN] 📊 Using simulated data (no data sources accessible)
+[2026-02-17T18:58:49.345Z] [INFO] 📈 Collected: 155 in, 694 out, 141 context
+[2026-02-17T19:00:02.059Z] [INFO] 🌸 Token Collector initialized
+[2026-02-17T19:00:02.070Z] [INFO] 📂 Loaded existing data
+[2026-02-17T19:00:02.072Z] [INFO] 🔍 Collecting session status data...
+[2026-02-17T19:00:02.072Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-17T19:00:02.214Z] [WARN] ⚠️  Endpoint /api/session/status returns HTML, skipping
+[2026-02-17T19:00:02.232Z] [WARN] ⚠️  Endpoint /api/stats returns HTML, skipping
+[2026-02-17T19:00:02.252Z] [WARN] ⚠️  Endpoint /session_status returns HTML, skipping
+[2026-02-17T19:00:02.263Z] [WARN] ⚠️  Endpoint /stats returns HTML, skipping
+[2026-02-17T19:00:02.290Z] [WARN] ⚠️  Endpoint /api/v1/session returns HTML, skipping
+[2026-02-17T19:00:02.302Z] [WARN] ⚠️  Endpoint /api/usage returns HTML, skipping
+[2026-02-17T19:00:02.305Z] [WARN] 📡 No JSON API endpoints found, falling back to simulation
+[2026-02-17T19:00:02.306Z] [WARN] 📊 Using simulated data (no data sources accessible)
+[2026-02-17T19:00:02.306Z] [INFO] 📈 Collected: 362 in, 626 out, 99 context
