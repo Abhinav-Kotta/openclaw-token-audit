@@ -1,0 +1,22 @@
+{
+  "name": "openclaw-token-collector",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.3",
+    "@octokit/rest": "^20.0.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "audit": "node daily-audit.js",
+    "collect": "node run-collector.js",
+    "collect:watch": "node run-collector.js --watch",
+    "push": "node push-to-github.js",
+    "collect:and:push": "node run-collector.js && node push-to-github.js",
+    "cron:install": "node setup-cron.js --install",
+    "cron:remove": "node setup-cron.js --remove",
+    "cron:list": "node setup-cron.js --list"
+  }
+}
