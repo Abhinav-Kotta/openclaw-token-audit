@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
 /**
- * Repository Push Script
+ * GitHub Push Script
  * 
- * Pushes collected token data to remote repository
+ * Pushes collected token data to GitHub
  * 
  * Requires .env configuration:
- *   REPO_TOKEN=your_access_token
- *   REPO_OWNER=your_username
- *   REPO_NAME=your_repo_name
+ *   GITHUB_TOKEN=your_github_pat_token
+ *   GITHUB_REPO_OWNER=your_username
+ *   GITHUB_REPO_NAME=your_repo_name
  * 
  * Usage:
  *   node push-to-github.js
@@ -21,39 +21,39 @@ const path = require('path');
 
 class GitHubPusher {
   constructor() {
-    this.repoOwner = process.env.REPO_OWNER;
-    this.repoName = process.env.REPO_NAME;
-    this.repoToken = process.env.REPO_TOKEN;
+    this.repoOwner = process.env.GITHUB_REPO_OWNER;
+    this.repoName = process.env.GITHUB_REPO_NAME;
+    this.githubToken = process.env.GITHUB_TOKEN;
     this.dataDir = path.join(__dirname, 'data');
     this.repoDir = path.join(__dirname, '.git') ? __dirname : null;
   }
 
   validate() {
-    console.log('\n🔍 Validating Repository Configuration...\n');
+    console.log('\n🔍 Validating GitHub Configuration...\n');
 
     if (!this.repoOwner || this.repoOwner === 'optional') {
-      console.error('❌ REPO_OWNER not configured in .env');
-      console.error('   Set: REPO_OWNER=your_username\n');
+      console.error('❌ GITHUB_REPO_OWNER not configured in .env');
+      console.error('   Set: GITHUB_REPO_OWNER=your_username\n');
       return false;
     }
 
     if (!this.repoName || this.repoName === 'optional') {
-      console.error('❌ REPO_NAME not configured in .env');
-      console.error('   Set: REPO_NAME=your_repo_name\n');
+      console.error('❌ GITHUB_REPO_NAME not configured in .env');
+      console.error('   Set: GITHUB_REPO_NAME=your_repo_name\n');
       return false;
     }
 
-    if (!this.repoToken || this.repoToken === 'optional') {
-      console.error('❌ REPO_TOKEN not configured in .env');
-      console.error('   Set: REPO_TOKEN=your_access_token');
-      console.error('   Get token from your repository provider\n');
+    if (!this.githubToken || this.githubToken === 'optional') {
+      console.error('❌ GITHUB_TOKEN not configured in .env');
+      console.error('   Set: GITHUB_TOKEN=your_github_pat_token');
+      console.error('   Get PAT: https://github.com/settings/tokens\n');
       return false;
     }
 
-    console.log(`✅ Repository Config:`);
+    console.log(`✅ GitHub Config:`);
     console.log(`   Owner: ${this.repoOwner}`);
     console.log(`   Repo: ${this.repoName}`);
-    console.log(`   Token: ${this.repoToken ? '***configured***' : 'missing'}\n`);
+    console.log(`   Token: ${this.githubToken ? '***configured***' : 'missing'}\n`);
 
     return true;
   }
@@ -82,8 +82,8 @@ class GitHubPusher {
         console.log('🔧 Initializing git repository...');
         execSync('git init', { cwd: __dirname, stdio: 'pipe' });
         
-        // Add remote
-        const remoteUrl = `https://${this.repoToken}@github.com/${this.repoOwner}/${this.repoName}.git`;
+        // Add GitHub remote
+        const remoteUrl = `https://${this.githubToken}@github.com/${this.repoOwner}/${this.repoName}.git`;
         execSync(`git remote add origin ${remoteUrl}`, { cwd: __dirname, stdio: 'pipe' });
         
         console.log('✅ Git repository initialized\n');
@@ -135,7 +135,7 @@ class GitHubPusher {
       console.error(`\n❌ Push failed: ${error.message}\n`);
       
       if (error.message.includes('Authentication')) {
-        console.error('💡 Check your REPO_TOKEN in .env');
+        console.error('💡 Check your GITHUB_TOKEN in .env');
       }
       
       return false;
