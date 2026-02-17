@@ -1,0 +1,30 @@
+{
+  "date": "2026-02-16",
+  "timestamp": "2026-02-16T22:04:08.337Z",
+  "daily": {
+    "tokensIn": 405,
+    "tokensOut": 643,
+    "context": 101
+  },
+  "total": {
+    "tokensIn": 1405,
+    "tokensOut": 2643,
+    "context": 601
+  },
+  "agents": {
+    "gpt-4": 1
+  },
+  "channels": {
+    "webchat": 1
+  },
+  "tools": {},
+  "sessionCount": 1,
+  "summary": {
+    "dailyTotal": 1149,
+    "totalTokens": 4649,
+    "averageTokensPerSession": 4649,
+    "topAgent": "gpt-4",
+    "topChannel": "webchat",
+    "topTool": "None"
+  }
+}
