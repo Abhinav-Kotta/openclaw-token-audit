@@ -12,7 +12,10 @@
     "next": "^14.0.0",
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.263.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "date-fns": "^3.0.0",
+    "clsx": "^2.0.0",
+    "recharts": "^2.10.0"
   },
   "devDependencies": {
     "@types/node": "^20.10.5",
