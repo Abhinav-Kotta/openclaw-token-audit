@@ -17,6 +17,7 @@ import { format, parseISO } from 'date-fns';
 
 interface ChartData {
   date: string;
+  dateISO: string;
   tokensIn: number;
   tokensOut: number;
   total: number;
@@ -28,7 +29,15 @@ interface TokenChartProps {
 
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (active && payload && payload.length) {
-    const date = parseISO(label);
+    // Use the first payload's dateISO if available, otherwise parse the label
+    const dateISO = payload[0]?.payload?.dateISO || label;
+    let date;
+    try {
+      date = parseISO(dateISO);
+    } catch {
+      // Fallback if dateISO is invalid
+      return null;
+    }
     
     return (
       <motion.div
@@ -82,10 +91,11 @@ const CustomDot = (props: any) => {
 };
 
 export default function TokenChart({ data }: TokenChartProps) {
-  // Format data for display
+  // Format data for display while preserving original ISO date
   const formattedData = data.map(item => ({
     ...item,
-    date: format(parseISO(item.date), 'MMM dd'),
+    dateISO: item.date, // Keep original ISO string for tooltip parsing
+    date: format(parseISO(item.date), 'MMM dd'), // Use formatted for display
   }));
 
   return (

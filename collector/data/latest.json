@@ -389,6 +389,32 @@
         "started": "2026-02-18T13:32:25.262Z",
         "simulated": true
       }
+    },
+    {
+      "timestamp": "2026-02-18T14:43:56.350Z",
+      "tokensIn": 0,
+      "tokensOut": 343,
+      "context": 58756,
+      "session": {
+        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
+        "agent": "claude-haiku-4-5",
+        "channel": "main",
+        "started": "2026-02-18T14:39:00.855Z",
+        "simulated": false
+      }
+    },
+    {
+      "timestamp": "2026-02-18T14:44:09.801Z",
+      "tokensIn": 0,
+      "tokensOut": 105,
+      "context": 60680,
+      "session": {
+        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
+        "agent": "claude-haiku-4-5",
+        "channel": "main",
+        "started": "2026-02-18T14:39:05.876Z",
+        "simulated": false
+      }
     }
   ],
   "tools": {
@@ -401,7 +427,7 @@
     "browser": 2
   },
   "agents": {
-    "claude-haiku-4-5": 2,
+    "claude-haiku-4-5": 4,
     "claude-sonnet-4-5": 1,
     "tmom-frontend": 1,
     "ollama-llama3.3": 1,
@@ -418,7 +444,8 @@
     "telegram": 6,
     "discord": 3,
     "api": 2,
-    "cli": 2
+    "cli": 2,
+    "main": 2
   },
   "context": [],
   "tokenUsage": {
@@ -440,8 +467,8 @@
       },
       "2026-02-18": {
         "tokensIn": 9792,
-        "tokensOut": 21760,
-        "context": 4104
+        "tokensOut": 22208,
+        "context": 123540
       }
     },
     "hourly": {
@@ -562,14 +589,14 @@
       },
       "2026-02-18T14": {
         "tokensIn": 616,
-        "tokensOut": 1230,
-        "context": 543
+        "tokensOut": 1678,
+        "context": 119979
       }
     },
     "total": {
       "tokensIn": 28824,
-      "tokensOut": 54574,
-      "context": 9758
+      "tokensOut": 55022,
+      "context": 129194
     }
   }
 }

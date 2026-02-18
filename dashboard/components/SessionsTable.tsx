@@ -126,10 +126,14 @@ const SessionRow = ({ session, index }: { session: Session; index: number }) => 
           <Clock className="w-4 h-4" />
           <span className="text-sm">
             {(() => {
-              const start = parseISO(session.session.started);
-              const end = parseISO(session.timestamp);
-              const diffMinutes = Math.round((end.getTime() - start.getTime()) / (1000 * 60));
-              return `${diffMinutes}m`;
+              try {
+                const start = parseISO(session.session.started);
+                const end = parseISO(session.timestamp);
+                const diffMinutes = Math.round((end.getTime() - start.getTime()) / (1000 * 60));
+                return `${diffMinutes}m`;
+              } catch {
+                return '—';
+              }
             })()}
           </span>
         </div>
@@ -138,10 +142,21 @@ const SessionRow = ({ session, index }: { session: Session; index: number }) => 
       {/* Timestamp */}
       <td className="px-6 py-4">
         <div className="text-text-secondary text-sm">
-          <div>{format(parseISO(session.timestamp), 'MMM dd, HH:mm')}</div>
-          <div className="text-xs opacity-60">
-            {format(parseISO(session.timestamp), 'yyyy')}
-          </div>
+          {(() => {
+            try {
+              const date = parseISO(session.timestamp);
+              return (
+                <>
+                  <div>{format(date, 'MMM dd, HH:mm')}</div>
+                  <div className="text-xs opacity-60">
+                    {format(date, 'yyyy')}
+                  </div>
+                </>
+              );
+            } catch {
+              return <div>Invalid date</div>;
+            }
+          })()}
         </div>
       </td>
     </motion.tr>
@@ -149,9 +164,17 @@ const SessionRow = ({ session, index }: { session: Session; index: number }) => 
 };
 
 export default function SessionsTable({ sessions }: SessionsTableProps) {
-  const sortedSessions = [...sessions].sort(
-    (a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
-  );
+  const sortedSessions = [...sessions]
+    .filter(session => {
+      // Validate timestamps exist and are valid ISO strings
+      if (!session.timestamp || !session.session?.started) return false;
+      const endTime = new Date(session.timestamp);
+      const startTime = new Date(session.session.started);
+      return !isNaN(endTime.getTime()) && !isNaN(startTime.getTime());
+    })
+    .sort(
+      (a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
+    );
 
   return (
     <motion.div

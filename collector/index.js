@@ -180,40 +180,124 @@ class TokenCollector {
 
   async collectFromAPI() {
     try {
-      // Try common OpenClaw API endpoints with quick failure
-      const endpoints = [
-        '/api/session/status',
-        '/api/stats',
-        '/session_status',
-        '/stats',
-        '/api/v1/session',
-        '/api/usage'
-      ];
+      // Use the gateway API to fetch real session data
+      await this.log('📡 Fetching real session data from OpenClaw gateway...');
       
-      for (const endpoint of endpoints) {
+      try {
+        // Try to connect to the gateway using environment variables
+        const gatewayUrl = process.env.OPENCLAW_GATEWAY_URL || 'http://localhost:18789';
+        const gatewayToken = process.env.OPENCLAW_GATEWAY_TOKEN || '';
+        
+        // For now, we'll collect from actual session transcripts
+        // since the gateway REST API is primarily for UI
+        const sessionData = await this.collectFromTranscripts();
+        if (sessionData) {
+          return sessionData;
+        }
+      } catch (error) {
+        await this.log(`⚠️  Gateway API request failed: ${error.message}`, 'warn');
+      }
+      
+      return null;
+    } catch (error) {
+      return null;
+    }
+  }
+
+  async collectFromTranscripts() {
+    try {
+      // Read real session transcripts from OpenClaw's session directory
+      const sessionsDir = '/home/ubuntu/.openclaw/agents/main/sessions';
+      
+      // Check if directory exists
+      try {
+        await fs.access(sessionsDir);
+      } catch {
+        return null;
+      }
+      
+      const sessionFiles = await fs.readdir(sessionsDir);
+      const transcriptFiles = sessionFiles.filter(f => f.endsWith('.jsonl'));
+      
+      if (transcriptFiles.length === 0) {
+        return null;
+      }
+      
+      // Read the most recently modified transcript
+      let latestFile = null;
+      let latestTime = 0;
+      
+      for (const file of transcriptFiles) {
         try {
-          // Use single attempt for faster failure detection
-          const response = await this.makeGatewayRequest(endpoint, 1);
-          
-          // Check if response is JSON and contains token data
-          if (typeof response === 'object' && 
-              (response.tokensIn !== undefined || response.tokens !== undefined || response.usage !== undefined)) {
-            await this.log(`✅ Found token data at: ${endpoint}`);
-            return response;
+          const filePath = path.join(sessionsDir, file);
+          const stats = await fs.stat(filePath);
+          if (stats.mtimeMs > latestTime) {
+            latestTime = stats.mtimeMs;
+            latestFile = filePath;
           }
         } catch (error) {
-          // Skip HTML responses quickly
-          if (error.message.includes('text/html')) {
-            await this.log(`⚠️  Endpoint ${endpoint} returns HTML, skipping`, 'warn');
-            continue;
-          }
-          // Continue to next endpoint for other errors
+          continue;
         }
       }
       
-      await this.log('📡 No JSON API endpoints found, falling back to simulation', 'warn');
+      if (!latestFile) {
+        return null;
+      }
+      
+      await this.log(`📂 Reading session data from: ${path.basename(latestFile)}`);
+      
+      // Parse the JSONL file (one JSON object per line)
+      const content = await fs.readFile(latestFile, 'utf8');
+      const lines = content.split('\n').filter(line => line.trim());
+      
+      // Get the last complete message (most recent) that has usage data
+      for (let i = lines.length - 1; i >= 0; i--) {
+        try {
+          const logEntry = JSON.parse(lines[i]);
+          
+          // Handle different entry types - look for actual message entries with usage
+          let message = null;
+          let usage = null;
+          let timestamp = null;
+          
+          if (logEntry.message && logEntry.message.usage && typeof logEntry.message.usage.totalTokens === 'number') {
+            // Format: {"type": "message", "message": {...}, "usage": {...}}
+            message = logEntry.message;
+            usage = logEntry.message.usage;
+            timestamp = logEntry.timestamp;
+          } else if (logEntry.usage && typeof logEntry.usage.totalTokens === 'number') {
+            // Alternate format
+            usage = logEntry.usage;
+            message = logEntry.message || {};
+            timestamp = logEntry.timestamp;
+          }
+          
+          if (usage && timestamp) {
+            // Parse agent name from model or message metadata
+            let agentName = logEntry.model || message.model || 'claude-haiku-4-5';
+            
+            return {
+              tokensIn: usage.input || 0,
+              tokensOut: usage.output || 0,
+              context: (usage.cacheRead || 0) + (usage.cacheWrite || 0),
+              session: {
+                id: path.basename(latestFile, '.jsonl'),
+                agent: agentName,
+                channel: 'main',
+                started: new Date(new Date(timestamp).getTime() - (usage.totalTokens * 5)).toISOString(), // Estimate start time
+                simulated: false
+              },
+              timestamp: timestamp
+            };
+          }
+        } catch (error) {
+          continue;
+        }
+      }
+      
       return null;
     } catch (error) {
+      await this.log(`❌ Transcript collection error: ${error.message}`, 'warn');
       return null;
     }
   }
