@@ -115,6 +115,16 @@ export default function DashboardPage() {
       <Header onRefresh={fetchData} />
       
       <main className="container mx-auto px-6 py-8">
+        {/* Real Data Badge */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="mb-8 inline-flex items-center gap-2 px-4 py-2 bg-green-500/20 border border-green-500/40 rounded-lg"
+        >
+          <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+          <span className="text-sm text-green-300 font-medium">Real Data Only</span>
+        </motion.div>
+
         {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

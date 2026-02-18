@@ -143,6 +143,52 @@ export async function GET(request: NextRequest) {
       if (!data.tokenUsage || !data.sessions) {
         throw new Error('Invalid data format');
       }
+
+      // Filter out simulated sessions - only show real data
+      data.sessions = data.sessions.filter(session => !session.session?.simulated);
+      
+      // Recalculate statistics based on real sessions only
+      let totalTokensIn = 0;
+      let totalTokensOut = 0;
+      let totalContext = 0;
+      
+      const newDaily: Record<string, { tokensIn: number; tokensOut: number; context: number }> = {};
+      const newHourly: Record<string, { tokensIn: number; tokensOut: number; context: number }> = {};
+      
+      data.sessions.forEach(session => {
+        totalTokensIn += session.tokensIn || 0;
+        totalTokensOut += session.tokensOut || 0;
+        totalContext += session.context || 0;
+        
+        // Aggregate by date
+        const dateKey = session.timestamp.split('T')[0];
+        if (!newDaily[dateKey]) {
+          newDaily[dateKey] = { tokensIn: 0, tokensOut: 0, context: 0 };
+        }
+        newDaily[dateKey].tokensIn += session.tokensIn || 0;
+        newDaily[dateKey].tokensOut += session.tokensOut || 0;
+        newDaily[dateKey].context += session.context || 0;
+        
+        // Aggregate by hour
+        const hourKey = session.timestamp.substring(0, 13);
+        if (!newHourly[hourKey]) {
+          newHourly[hourKey] = { tokensIn: 0, tokensOut: 0, context: 0 };
+        }
+        newHourly[hourKey].tokensIn += session.tokensIn || 0;
+        newHourly[hourKey].tokensOut += session.tokensOut || 0;
+        newHourly[hourKey].context += session.context || 0;
+      });
+      
+      // Update token usage with real data only
+      data.tokenUsage = {
+        daily: newDaily,
+        hourly: newHourly,
+        total: {
+          tokensIn: totalTokensIn,
+          tokensOut: totalTokensOut,
+          context: totalContext
+        }
+      };
     } catch (error) {
       console.log('Using mock data due to error:', error);
       data = getMockData();

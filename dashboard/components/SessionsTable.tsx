@@ -186,14 +186,19 @@ export default function SessionsTable({ sessions }: SessionsTableProps) {
       <div className="px-6 py-4 border-b border-primary-500/20">
         <div className="flex items-center justify-between">
           <div>
-            <h3 className="text-xl font-bold text-text-primary">Recent Sessions</h3>
+            <div className="flex items-center gap-3 mb-2">
+              <h3 className="text-xl font-bold text-text-primary">Recent Sessions</h3>
+              <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-500/20 text-green-300 border border-green-500/40">
+                Real Data
+              </span>
+            </div>
             <p className="text-text-secondary text-sm">
-              Latest token usage sessions across all channels
+              Live token usage sessions from OpenClaw agents
             </p>
           </div>
           <div className="flex items-center space-x-2">
             <div className="text-text-secondary text-sm">
-              {sortedSessions.length} total sessions
+              {sortedSessions.length} sessions
             </div>
           </div>
         </div>
