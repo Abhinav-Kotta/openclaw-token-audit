@@ -6,17 +6,34 @@
     "axios": "^1.6.0",
     "dotenv": "^16.3.1",
     "node-cron": "^3.0.3",
-    "@octokit/rest": "^20.0.2"
+    "@octokit/rest": "^20.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "^14.0.0",
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.263.1",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.32",
+    "autoprefixer": "^10.4.16"
   },
   "scripts": {
-    "start": "node index.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "audit": "node daily-audit.js",
-    "collect": "node run-collector.js",
-    "collect:watch": "node run-collector.js --watch",
-    "push": "node push-to-github.js",
-    "collect:and:push": "node run-collector.js && node push-to-github.js",
-    "cron:install": "node setup-cron.js --install",
-    "cron:remove": "node setup-cron.js --remove",
-    "cron:list": "node setup-cron.js --list"
+    "collect": "node collector/run-collector.js",
+    "collect:watch": "node collector/run-collector.js --watch",
+    "push": "node collector/push-to-github.js",
+    "collect:and:push": "node collector/run-collector.js && node collector/push-to-github.js",
+    "cron:install": "node collector/setup-cron.js --install",
+    "cron:remove": "node collector/setup-cron.js --remove",
+    "cron:list": "node collector/setup-cron.js --list"
   }
 }

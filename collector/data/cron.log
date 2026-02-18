@@ -104,3 +104,1181 @@
 📊 View on GitHub:
    https://github.com/Abhinav-Kotta/openclaw-token-audit
 
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-17T20:00:02.548Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 106 in, 990 out, 148 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 12
+   Tokens In: 17,924
+   Tokens Out: 30,768
+   Context: 5,348
+   Total: 54,040
+   Agents: 7 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":2,"claude-sonnet":4,"gpt-3.5-turbo":1}
+   Channels: 4 {"webchat":4,"whatsapp":1,"slack":5,"telegram":2}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-17):
+   In: 8,224
+   Out: 15,468
+   Context: 2,748
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/17/2026, 20:00:02"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-17T21:00:02.023Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 394 in, 833 out, 133 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 13
+   Tokens In: 18,318
+   Tokens Out: 31,601
+   Context: 5,481
+   Total: 55,400
+   Agents: 7 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":3,"claude-sonnet":4,"gpt-3.5-turbo":1}
+   Channels: 4 {"webchat":5,"whatsapp":1,"slack":5,"telegram":2}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-17):
+   In: 8,618
+   Out: 16,301
+   Context: 2,881
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/17/2026, 21:00:02"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-17T22:00:02.478Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 227 in, 289 out, 105 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 14
+   Tokens In: 18,545
+   Tokens Out: 31,890
+   Context: 5,586
+   Total: 56,021
+   Agents: 7 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":4,"claude-sonnet":4,"gpt-3.5-turbo":1}
+   Channels: 4 {"webchat":5,"whatsapp":1,"slack":5,"telegram":3}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-17):
+   In: 8,845
+   Out: 16,590
+   Context: 2,986
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/17/2026, 22:00:02"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-17T23:00:02.850Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 487 in, 924 out, 68 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 15
+   Tokens In: 19,032
+   Tokens Out: 32,814
+   Context: 5,654
+   Total: 57,500
+   Agents: 7 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":4,"claude-sonnet":4,"gpt-3.5-turbo":2}
+   Channels: 4 {"webchat":5,"whatsapp":1,"slack":5,"telegram":4}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-17):
+   In: 9,332
+   Out: 17,514
+   Context: 3,054
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/17/2026, 23:00:03"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+🌸 Token Collector initialized
+📂 Loaded existing data
+📊 Daily audit report generated:
+   JSON: /home/ubuntu/.openclaw/workspace/token-audit/collector/reports/audit-2026-02-18.json
+   Markdown: /home/ubuntu/.openclaw/workspace/token-audit/collector/reports/audit-2026-02-18.md
+   Daily tokens: 0
+   Total tokens: 57500
+✅ Daily audit completed successfully
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T00:00:03.364Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 111 in, 366 out, 98 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 16
+   Tokens In: 19,143
+   Tokens Out: 33,180
+   Context: 5,752
+   Total: 58,075
+   Agents: 8 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":4,"claude-sonnet":4,"gpt-3.5-turbo":2,"claude-haiku":1}
+   Channels: 4 {"webchat":6,"whatsapp":1,"slack":5,"telegram":4}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 111
+   Out: 366
+   Context: 98
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 00:00:03"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T01:00:02.630Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 247 in, 930 out, 199 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 17
+   Tokens In: 19,390
+   Tokens Out: 34,110
+   Context: 5,951
+   Total: 59,451
+   Agents: 8 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":4,"claude-sonnet":4,"gpt-3.5-turbo":3,"claude-haiku":1}
+   Channels: 5 {"webchat":6,"whatsapp":1,"slack":5,"telegram":4,"discord":1}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 358
+   Out: 1,296
+   Context: 297
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 01:00:02"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T02:00:02.719Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 122 in, 523 out, 168 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 18
+   Tokens In: 19,512
+   Tokens Out: 34,633
+   Context: 6,119
+   Total: 60,264
+   Agents: 8 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":5,"claude-sonnet":4,"gpt-3.5-turbo":3,"claude-haiku":1}
+   Channels: 6 {"webchat":6,"whatsapp":1,"slack":5,"telegram":4,"discord":1,"api":1}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 480
+   Out: 1,819
+   Context: 465
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 02:00:03"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T03:00:01.545Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 497 in, 665 out, 167 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 19
+   Tokens In: 20,009
+   Tokens Out: 35,298
+   Context: 6,286
+   Total: 61,593
+   Agents: 9 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":5,"claude-sonnet":4,"gpt-3.5-turbo":3,"claude-haiku":1,"claude-opus":1}
+   Channels: 6 {"webchat":6,"whatsapp":1,"slack":5,"telegram":5,"discord":1,"api":1}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 977
+   Out: 2,484
+   Context: 632
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 03:00:01"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T04:00:02.840Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 234 in, 832 out, 58 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 20
+   Tokens In: 20,243
+   Tokens Out: 36,130
+   Context: 6,344
+   Total: 62,717
+   Agents: 9 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":5,"claude-sonnet":4,"gpt-3.5-turbo":3,"claude-haiku":2,"claude-opus":1}
+   Channels: 6 {"webchat":6,"whatsapp":1,"slack":5,"telegram":5,"discord":2,"api":1}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 1,211
+   Out: 3,316
+   Context: 690
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 04:00:03"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T05:00:02.717Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 467 in, 971 out, 114 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 21
+   Tokens In: 20,710
+   Tokens Out: 37,101
+   Context: 6,458
+   Total: 64,269
+   Agents: 9 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":5,"claude-sonnet":4,"gpt-3.5-turbo":3,"claude-haiku":2,"claude-opus":2}
+   Channels: 6 {"webchat":6,"whatsapp":1,"slack":6,"telegram":5,"discord":2,"api":1}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 1,678
+   Out: 4,287
+   Context: 804
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 05:00:02"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T06:00:02.845Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 430 in, 366 out, 162 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 22
+   Tokens In: 21,140
+   Tokens Out: 37,467
+   Context: 6,620
+   Total: 65,227
+   Agents: 9 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":6,"claude-sonnet":4,"gpt-3.5-turbo":3,"claude-haiku":2,"claude-opus":2}
+   Channels: 6 {"webchat":6,"whatsapp":1,"slack":6,"telegram":5,"discord":2,"api":2}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 2,108
+   Out: 4,653
+   Context: 966
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 06:00:03"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T07:00:02.447Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 179 in, 456 out, 58 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 23
+   Tokens In: 21,319
+   Tokens Out: 37,923
+   Context: 6,678
+   Total: 65,920
+   Agents: 9 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":6,"claude-sonnet":4,"gpt-3.5-turbo":4,"claude-haiku":2,"claude-opus":2}
+   Channels: 6 {"webchat":7,"whatsapp":1,"slack":6,"telegram":5,"discord":2,"api":2}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 2,287
+   Out: 5,109
+   Context: 1,024
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 07:00:02"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T08:00:02.598Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 237 in, 841 out, 168 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 24
+   Tokens In: 21,556
+   Tokens Out: 38,764
+   Context: 6,846
+   Total: 67,166
+   Agents: 9 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":6,"claude-sonnet":4,"gpt-3.5-turbo":5,"claude-haiku":2,"claude-opus":2}
+   Channels: 7 {"webchat":7,"whatsapp":1,"slack":6,"telegram":5,"discord":2,"api":2,"cli":1}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 2,524
+   Out: 5,950
+   Context: 1,192
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 08:00:02"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T09:00:02.835Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 459 in, 2446 out, 487 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 25
+   Tokens In: 22,015
+   Tokens Out: 41,210
+   Context: 7,333
+   Total: 70,558
+   Agents: 9 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":7,"claude-sonnet":4,"gpt-3.5-turbo":5,"claude-haiku":2,"claude-opus":2}
+   Channels: 7 {"webchat":7,"whatsapp":1,"slack":7,"telegram":5,"discord":2,"api":2,"cli":1}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 2,983
+   Out: 8,396
+   Context: 1,679
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 09:00:03"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T10:00:01.720Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 1938 in, 3386 out, 258 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 26
+   Tokens In: 23,953
+   Tokens Out: 44,596
+   Context: 7,591
+   Total: 76,140
+   Agents: 9 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":7,"claude-sonnet":4,"gpt-3.5-turbo":5,"claude-haiku":2,"claude-opus":3}
+   Channels: 7 {"webchat":8,"whatsapp":1,"slack":7,"telegram":5,"discord":2,"api":2,"cli":1}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 4,921
+   Out: 11,782
+   Context: 1,937
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 10:00:01"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T11:00:01.386Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 919 in, 2477 out, 272 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 27
+   Tokens In: 24,872
+   Tokens Out: 47,073
+   Context: 7,863
+   Total: 79,808
+   Agents: 9 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":7,"claude-sonnet":4,"gpt-3.5-turbo":5,"claude-haiku":3,"claude-opus":3}
+   Channels: 7 {"webchat":9,"whatsapp":1,"slack":7,"telegram":5,"discord":2,"api":2,"cli":1}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 5,840
+   Out: 14,259
+   Context: 2,209
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 11:00:01"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T12:00:02.823Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 1423 in, 2383 out, 637 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 28
+   Tokens In: 26,295
+   Tokens Out: 49,456
+   Context: 8,500
+   Total: 84,251
+   Agents: 9 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":8,"claude-sonnet":4,"gpt-3.5-turbo":5,"claude-haiku":3,"claude-opus":3}
+   Channels: 7 {"webchat":9,"whatsapp":1,"slack":7,"telegram":5,"discord":2,"api":2,"cli":2}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 7,263
+   Out: 16,642
+   Context: 2,846
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 12:00:03"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T13:00:02.286Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 1913 in, 3888 out, 715 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 29
+   Tokens In: 28,208
+   Tokens Out: 53,344
+   Context: 9,215
+   Total: 90,767
+   Agents: 9 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":8,"claude-sonnet":4,"gpt-3.5-turbo":5,"claude-haiku":3,"claude-opus":4}
+   Channels: 7 {"webchat":9,"whatsapp":1,"slack":7,"telegram":6,"discord":2,"api":2,"cli":2}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 9,176
+   Out: 20,530
+   Context: 3,561
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 13:00:02"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
