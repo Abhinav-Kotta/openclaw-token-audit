@@ -103,12 +103,24 @@ export default function DashboardPage() {
   const totalTools = Object.keys(tools).length;
 
   // Prepare chart data
-  const chartData = Object.entries(tokenUsage.daily).map(([date, usage]) => ({
-    date,
-    tokensIn: usage.tokensIn,
-    tokensOut: usage.tokensOut,
-    total: usage.tokensIn + usage.tokensOut,
-  })).slice(-7); // Last 7 days
+  const chartData = Object.entries(tokenUsage.daily)
+    .filter(([date]) => {
+      // Only include valid dates
+      try {
+        new Date(date);
+        return true;
+      } catch {
+        return false;
+      }
+    })
+    .map(([date, usage]) => ({
+      date,
+      dateISO: date,
+      tokensIn: usage.tokensIn,
+      tokensOut: usage.tokensOut,
+      total: usage.tokensIn + usage.tokensOut,
+    }))
+    .slice(-7); // Last 7 days
 
   return (
     <div className="min-h-screen">
