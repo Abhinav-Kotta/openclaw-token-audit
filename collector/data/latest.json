@@ -376,6 +376,19 @@
         "started": "2026-02-18T12:55:10.504Z",
         "simulated": true
       }
+    },
+    {
+      "timestamp": "2026-02-18T14:00:02.389Z",
+      "tokensIn": 616,
+      "tokensOut": 1230,
+      "context": 543,
+      "session": {
+        "id": "sim-session-1771423202389",
+        "agent": "gpt-3.5-turbo",
+        "channel": "discord",
+        "started": "2026-02-18T13:32:25.262Z",
+        "simulated": true
+      }
     }
   ],
   "tools": {
@@ -394,7 +407,7 @@
     "ollama-llama3.3": 1,
     "gpt-4": 8,
     "claude-sonnet": 4,
-    "gpt-3.5-turbo": 5,
+    "gpt-3.5-turbo": 6,
     "claude-haiku": 3,
     "claude-opus": 4
   },
@@ -403,7 +416,7 @@
     "whatsapp": 1,
     "slack": 7,
     "telegram": 6,
-    "discord": 2,
+    "discord": 3,
     "api": 2,
     "cli": 2
   },
@@ -426,9 +439,9 @@
         "context": 3054
       },
       "2026-02-18": {
-        "tokensIn": 9176,
-        "tokensOut": 20530,
-        "context": 3561
+        "tokensIn": 9792,
+        "tokensOut": 21760,
+        "context": 4104
       }
     },
     "hourly": {
@@ -546,12 +559,17 @@
         "tokensIn": 1913,
         "tokensOut": 3888,
         "context": 715
+      },
+      "2026-02-18T14": {
+        "tokensIn": 616,
+        "tokensOut": 1230,
+        "context": 543
       }
     },
     "total": {
-      "tokensIn": 28208,
-      "tokensOut": 53344,
-      "context": 9215
+      "tokensIn": 28824,
+      "tokensOut": 54574,
+      "context": 9758
     }
   }
 }

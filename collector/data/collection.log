@@ -348,3 +348,16 @@
 [2026-02-18T13:00:02.459Z] [WARN] 📡 No JSON API endpoints found, falling back to simulation
 [2026-02-18T13:00:02.463Z] [WARN] 📊 Using simulated data (no data sources accessible)
 [2026-02-18T13:00:02.464Z] [INFO] 📈 Collected: 1913 in, 3888 out, 715 context
+[2026-02-18T14:00:02.276Z] [INFO] 🌸 Token Collector initialized
+[2026-02-18T14:00:02.278Z] [INFO] 📂 Loaded existing data
+[2026-02-18T14:00:02.279Z] [INFO] 🔍 Collecting session status data...
+[2026-02-18T14:00:02.280Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-18T14:00:02.356Z] [WARN] ⚠️  Endpoint /api/session/status returns HTML, skipping
+[2026-02-18T14:00:02.366Z] [WARN] ⚠️  Endpoint /api/stats returns HTML, skipping
+[2026-02-18T14:00:02.370Z] [WARN] ⚠️  Endpoint /session_status returns HTML, skipping
+[2026-02-18T14:00:02.376Z] [WARN] ⚠️  Endpoint /stats returns HTML, skipping
+[2026-02-18T14:00:02.383Z] [WARN] ⚠️  Endpoint /api/v1/session returns HTML, skipping
+[2026-02-18T14:00:02.388Z] [WARN] ⚠️  Endpoint /api/usage returns HTML, skipping
+[2026-02-18T14:00:02.389Z] [WARN] 📡 No JSON API endpoints found, falling back to simulation
+[2026-02-18T14:00:02.389Z] [WARN] 📊 Using simulated data (no data sources accessible)
+[2026-02-18T14:00:02.390Z] [INFO] 📈 Collected: 616 in, 1230 out, 543 context

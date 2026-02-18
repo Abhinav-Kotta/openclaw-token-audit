@@ -1,16 +1,20 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import '@/styles/globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
+
+export const generateViewport: () => Viewport = () => ({
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#ec4899',
+});
 
 export const metadata: Metadata = {
   title: 'OpenClaw Token Audit Dashboard',
   description: 'Anime-themed dashboard for monitoring OpenClaw token usage and analytics',
   keywords: ['OpenClaw', 'Token Audit', 'Dashboard', 'Analytics', 'AI'],
   authors: [{ name: 'OpenClaw Team' }],
-  viewport: 'width=device-width, initial-scale=1',
-  themeColor: '#ec4899',
 };
 
 export default function RootLayout({

@@ -1282,3 +1282,68 @@
 📊 View on GitHub:
    https://github.com/Abhinav-Kotta/openclaw-token-audit
 
+
+> openclaw-token-collector@1.0.0 collect:and:push
+> node run-collector.js && node push-to-github.js
+
+
+🔍 Validating Configuration...
+⚠️  OPENCLAW_TOKEN not configured in .env
+   Using default OpenClaw token from gateway auth.
+✅ Gateway URL: http://localhost:18789
+✅ Token configured: yes
+
+⏱️  Starting collection at 2026-02-18T14:00:02.273Z
+🌸 Token Collector initialized
+📂 Loaded existing data
+📚 Loaded existing data
+🔄 Fetching metrics from gateway...
+🔍 Collecting session status data...
+📂 Found logs at: /home/ubuntu/.openclaw/logs
+⚠️  Endpoint /api/session/status returns HTML, skipping
+⚠️  Endpoint /api/stats returns HTML, skipping
+⚠️  Endpoint /session_status returns HTML, skipping
+⚠️  Endpoint /stats returns HTML, skipping
+⚠️  Endpoint /api/v1/session returns HTML, skipping
+⚠️  Endpoint /api/usage returns HTML, skipping
+📡 No JSON API endpoints found, falling back to simulation
+📊 Using simulated data (no data sources accessible)
+📈 Collected: 616 in, 1230 out, 543 context
+✅ Collected new metrics
+
+📈 Collection Summary:
+   Sessions: 30
+   Tokens In: 28,824
+   Tokens Out: 54,574
+   Context: 9,758
+   Total: 93,156
+   Agents: 9 {"claude-haiku-4-5":2,"claude-sonnet-4-5":1,"tmom-frontend":1,"ollama-llama3.3":1,"gpt-4":8,"claude-sonnet":4,"gpt-3.5-turbo":6,"claude-haiku":3,"claude-opus":4}
+   Channels: 7 {"webchat":9,"whatsapp":1,"slack":7,"telegram":6,"discord":3,"api":2,"cli":2}
+   Tools: 7 {"web_search":8,"memory_search":12,"code_execution":5,"file_operations":7,"image_analysis":3,"message":15,"browser":2}
+
+📅 Today's Usage (2026-02-18):
+   In: 9,792
+   Out: 21,760
+   Context: 4,104
+
+✅ Collection complete in 0s
+
+🔍 Validating Repository Configuration...
+
+✅ Repository Config:
+   Owner: Abhinav-Kotta
+   Repo: openclaw-token-audit
+   Token: ***configured***
+
+📤 Pushing data to GitHub...
+
+🔐 Configuring git user...
+📝 Staging files...
+📌 Committing: "🤖 Token audit update: 02/18/2026, 14:00:02"
+🚀 Pushing to GitHub...
+
+✅ Data pushed successfully!
+
+📊 View on GitHub:
+   https://github.com/Abhinav-Kotta/openclaw-token-audit
+
