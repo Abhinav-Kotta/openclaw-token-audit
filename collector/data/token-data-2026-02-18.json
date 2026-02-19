@@ -66,331 +66,6 @@
       }
     },
     {
-      "timestamp": "2026-02-17T18:47:32.919Z",
-      "tokensIn": 207,
-      "tokensOut": 994,
-      "context": 92,
-      "session": {
-        "id": "sim-session-1771354052919",
-        "agent": "gpt-4",
-        "channel": "telegram",
-        "started": "2026-02-17T18:30:54.220Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-17T18:47:58.472Z",
-      "tokensIn": 477,
-      "tokensOut": 279,
-      "context": 152,
-      "session": {
-        "id": "sim-session-1771354078472",
-        "agent": "claude-sonnet",
-        "channel": "telegram",
-        "started": "2026-02-17T18:03:39.086Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-17T18:48:11.096Z",
-      "tokensIn": 338,
-      "tokensOut": 918,
-      "context": 102,
-      "session": {
-        "id": "sim-session-1771354091096",
-        "agent": "claude-sonnet",
-        "channel": "webchat",
-        "started": "2026-02-17T18:34:42.624Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-17T18:50:01.256Z",
-      "tokensIn": 229,
-      "tokensOut": 627,
-      "context": 179,
-      "session": {
-        "id": "sim-session-1771354201256",
-        "agent": "gpt-4",
-        "channel": "slack",
-        "started": "2026-02-17T18:14:58.082Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-17T18:58:49.344Z",
-      "tokensIn": 155,
-      "tokensOut": 694,
-      "context": 141,
-      "session": {
-        "id": "sim-session-1771354729344",
-        "agent": "gpt-3.5-turbo",
-        "channel": "webchat",
-        "started": "2026-02-17T18:24:51.233Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-17T19:00:02.306Z",
-      "tokensIn": 362,
-      "tokensOut": 626,
-      "context": 99,
-      "session": {
-        "id": "sim-session-1771354802306",
-        "agent": "claude-sonnet",
-        "channel": "slack",
-        "started": "2026-02-17T18:14:49.014Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-17T20:00:02.751Z",
-      "tokensIn": 106,
-      "tokensOut": 990,
-      "context": 148,
-      "session": {
-        "id": "sim-session-1771358402751",
-        "agent": "claude-sonnet",
-        "channel": "slack",
-        "started": "2026-02-17T19:41:22.534Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-17T21:00:02.246Z",
-      "tokensIn": 394,
-      "tokensOut": 833,
-      "context": 133,
-      "session": {
-        "id": "sim-session-1771362002246",
-        "agent": "gpt-4",
-        "channel": "webchat",
-        "started": "2026-02-17T20:13:41.561Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-17T22:00:02.665Z",
-      "tokensIn": 227,
-      "tokensOut": 289,
-      "context": 105,
-      "session": {
-        "id": "sim-session-1771365602665",
-        "agent": "gpt-4",
-        "channel": "telegram",
-        "started": "2026-02-17T21:39:09.348Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-17T23:00:03.066Z",
-      "tokensIn": 487,
-      "tokensOut": 924,
-      "context": 68,
-      "session": {
-        "id": "sim-session-1771369203066",
-        "agent": "gpt-3.5-turbo",
-        "channel": "telegram",
-        "started": "2026-02-17T22:38:21.218Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T00:00:03.488Z",
-      "tokensIn": 111,
-      "tokensOut": 366,
-      "context": 98,
-      "session": {
-        "id": "sim-session-1771372803488",
-        "agent": "claude-haiku",
-        "channel": "webchat",
-        "started": "2026-02-17T23:47:34.828Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T01:00:02.782Z",
-      "tokensIn": 247,
-      "tokensOut": 930,
-      "context": 199,
-      "session": {
-        "id": "sim-session-1771376402782",
-        "agent": "gpt-3.5-turbo",
-        "channel": "discord",
-        "started": "2026-02-18T00:26:12.527Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T02:00:02.858Z",
-      "tokensIn": 122,
-      "tokensOut": 523,
-      "context": 168,
-      "session": {
-        "id": "sim-session-1771380002858",
-        "agent": "gpt-4",
-        "channel": "api",
-        "started": "2026-02-18T01:59:28.599Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T03:00:01.714Z",
-      "tokensIn": 497,
-      "tokensOut": 665,
-      "context": 167,
-      "session": {
-        "id": "sim-session-1771383601714",
-        "agent": "claude-opus",
-        "channel": "telegram",
-        "started": "2026-02-18T02:16:26.198Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T04:00:02.962Z",
-      "tokensIn": 234,
-      "tokensOut": 832,
-      "context": 58,
-      "session": {
-        "id": "sim-session-1771387202961",
-        "agent": "claude-haiku",
-        "channel": "discord",
-        "started": "2026-02-18T03:29:10.359Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T05:00:02.861Z",
-      "tokensIn": 467,
-      "tokensOut": 971,
-      "context": 114,
-      "session": {
-        "id": "sim-session-1771390802861",
-        "agent": "claude-opus",
-        "channel": "slack",
-        "started": "2026-02-18T04:57:26.506Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T06:00:03.015Z",
-      "tokensIn": 430,
-      "tokensOut": 366,
-      "context": 162,
-      "session": {
-        "id": "sim-session-1771394403015",
-        "agent": "gpt-4",
-        "channel": "api",
-        "started": "2026-02-18T05:42:25.045Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T07:00:02.599Z",
-      "tokensIn": 179,
-      "tokensOut": 456,
-      "context": 58,
-      "session": {
-        "id": "sim-session-1771398002591",
-        "agent": "gpt-3.5-turbo",
-        "channel": "webchat",
-        "started": "2026-02-18T06:57:21.092Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T08:00:02.827Z",
-      "tokensIn": 237,
-      "tokensOut": 841,
-      "context": 168,
-      "session": {
-        "id": "sim-session-1771401602827",
-        "agent": "gpt-3.5-turbo",
-        "channel": "cli",
-        "started": "2026-02-18T07:32:13.594Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T09:00:02.953Z",
-      "tokensIn": 459,
-      "tokensOut": 2446,
-      "context": 487,
-      "session": {
-        "id": "sim-session-1771405202953",
-        "agent": "gpt-4",
-        "channel": "slack",
-        "started": "2026-02-18T08:07:28.367Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T10:00:01.876Z",
-      "tokensIn": 1938,
-      "tokensOut": 3386,
-      "context": 258,
-      "session": {
-        "id": "sim-session-1771408801876",
-        "agent": "claude-opus",
-        "channel": "webchat",
-        "started": "2026-02-18T09:08:52.712Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T11:00:01.556Z",
-      "tokensIn": 919,
-      "tokensOut": 2477,
-      "context": 272,
-      "session": {
-        "id": "sim-session-1771412401556",
-        "agent": "claude-haiku",
-        "channel": "webchat",
-        "started": "2026-02-18T10:38:29.955Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T12:00:02.953Z",
-      "tokensIn": 1423,
-      "tokensOut": 2383,
-      "context": 637,
-      "session": {
-        "id": "sim-session-1771416002953",
-        "agent": "gpt-4",
-        "channel": "cli",
-        "started": "2026-02-18T11:10:25.813Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T13:00:02.463Z",
-      "tokensIn": 1913,
-      "tokensOut": 3888,
-      "context": 715,
-      "session": {
-        "id": "sim-session-1771419602463",
-        "agent": "claude-opus",
-        "channel": "telegram",
-        "started": "2026-02-18T12:55:10.504Z",
-        "simulated": true
-      }
-    },
-    {
-      "timestamp": "2026-02-18T14:00:02.389Z",
-      "tokensIn": 616,
-      "tokensOut": 1230,
-      "context": 543,
-      "session": {
-        "id": "sim-session-1771423202389",
-        "agent": "gpt-3.5-turbo",
-        "channel": "discord",
-        "started": "2026-02-18T13:32:25.262Z",
-        "simulated": true
-      }
-    },
-    {
       "timestamp": "2026-02-18T14:43:56.350Z",
       "tokensIn": 0,
       "tokensOut": 343,
@@ -415,6 +90,123 @@
         "started": "2026-02-18T14:39:05.876Z",
         "simulated": false
       }
+    },
+    {
+      "timestamp": "2026-02-18T14:50:16.636Z",
+      "tokensIn": 2,
+      "tokensOut": 366,
+      "context": 80428,
+      "session": {
+        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
+        "agent": "claude-haiku-4-5",
+        "channel": "main",
+        "started": "2026-02-18T14:43:32.656Z",
+        "simulated": false
+      }
+    },
+    {
+      "timestamp": "2026-02-18T14:50:16.636Z",
+      "tokensIn": 2,
+      "tokensOut": 366,
+      "context": 80428,
+      "session": {
+        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
+        "agent": "claude-haiku-4-5",
+        "channel": "main",
+        "started": "2026-02-18T14:43:32.656Z",
+        "simulated": false
+      }
+    },
+    {
+      "timestamp": "2026-02-18T14:50:16.636Z",
+      "tokensIn": 2,
+      "tokensOut": 366,
+      "context": 80428,
+      "session": {
+        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
+        "agent": "claude-haiku-4-5",
+        "channel": "main",
+        "started": "2026-02-18T14:43:32.656Z",
+        "simulated": false
+      }
+    },
+    {
+      "timestamp": "2026-02-18T14:50:16.636Z",
+      "tokensIn": 2,
+      "tokensOut": 366,
+      "context": 80428,
+      "session": {
+        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
+        "agent": "claude-haiku-4-5",
+        "channel": "main",
+        "started": "2026-02-18T14:43:32.656Z",
+        "simulated": false
+      }
+    },
+    {
+      "timestamp": "2026-02-18T14:50:16.636Z",
+      "tokensIn": 2,
+      "tokensOut": 366,
+      "context": 80428,
+      "session": {
+        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
+        "agent": "claude-haiku-4-5",
+        "channel": "main",
+        "started": "2026-02-18T14:43:32.656Z",
+        "simulated": false
+      }
+    },
+    {
+      "timestamp": "2026-02-18T14:50:16.636Z",
+      "tokensIn": 2,
+      "tokensOut": 366,
+      "context": 80428,
+      "session": {
+        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
+        "agent": "claude-haiku-4-5",
+        "channel": "main",
+        "started": "2026-02-18T14:43:32.656Z",
+        "simulated": false
+      }
+    },
+    {
+      "timestamp": "2026-02-18T14:50:16.636Z",
+      "tokensIn": 2,
+      "tokensOut": 366,
+      "context": 80428,
+      "session": {
+        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
+        "agent": "claude-haiku-4-5",
+        "channel": "main",
+        "started": "2026-02-18T14:43:32.656Z",
+        "simulated": false
+      }
+    },
+    {
+      "timestamp": "2026-02-18T14:50:16.636Z",
+      "tokensIn": 2,
+      "tokensOut": 366,
+      "context": 80428,
+      "session": {
+        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
+        "agent": "claude-haiku-4-5",
+        "channel": "main",
+        "started": "2026-02-18T14:43:32.656Z",
+        "simulated": false
+      }
+    },
+    {
+      "timestamp": "2026-02-18T14:50:16.636Z",
+      "tokensIn": 2,
+      "tokensOut": 366,
+      "context": 80428,
+      "session": {
+        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
+        "agent": "claude-haiku-4-5",
+        "channel": "main",
+        "started": "2026-02-18T14:43:32.656Z",
+        "simulated": false
+      }
     }
   ],
   "tools": {
@@ -427,176 +219,47 @@
     "browser": 2
   },
   "agents": {
-    "claude-haiku-4-5": 4,
+    "claude-haiku-4-5": 13,
     "claude-sonnet-4-5": 1,
     "tmom-frontend": 1,
-    "ollama-llama3.3": 1,
-    "gpt-4": 8,
-    "claude-sonnet": 4,
-    "gpt-3.5-turbo": 6,
-    "claude-haiku": 3,
-    "claude-opus": 4
+    "ollama-llama3.3": 1
   },
   "channels": {
-    "webchat": 9,
+    "webchat": 2,
     "whatsapp": 1,
-    "slack": 7,
-    "telegram": 6,
-    "discord": 3,
-    "api": 2,
-    "cli": 2,
-    "main": 2
+    "slack": 2,
+    "main": 11
   },
   "context": [],
   "tokenUsage": {
     "daily": {
-      "2026-02-15": {
-        "tokensIn": 4500,
-        "tokensOut": 7200,
-        "context": 1200
-      },
-      "2026-02-16": {
-        "tokensIn": 5200,
-        "tokensOut": 8100,
-        "context": 1400
-      },
       "2026-02-17": {
-        "tokensIn": 9332,
-        "tokensOut": 17514,
-        "context": 3054
+        "tokensIn": 6450,
+        "tokensOut": 10340,
+        "context": 835
       },
       "2026-02-18": {
-        "tokensIn": 9792,
-        "tokensOut": 22208,
-        "context": 123540
+        "tokensIn": 18,
+        "tokensOut": 3742,
+        "context": 843288
       }
     },
     "hourly": {
-      "2026-02-17T00": {
-        "tokensIn": 180,
-        "tokensOut": 290,
-        "context": 45
-      },
-      "2026-02-17T06": {
-        "tokensIn": 250,
-        "tokensOut": 410,
-        "context": 65
-      },
-      "2026-02-17T12": {
-        "tokensIn": 1200,
-        "tokensOut": 1900,
-        "context": 280
-      },
       "2026-02-17T18": {
-        "tokensIn": 6126,
-        "tokensOut": 11252,
-        "context": 2111
-      },
-      "2026-02-17T19": {
-        "tokensIn": 362,
-        "tokensOut": 626,
-        "context": 99
-      },
-      "2026-02-17T20": {
-        "tokensIn": 106,
-        "tokensOut": 990,
-        "context": 148
-      },
-      "2026-02-17T21": {
-        "tokensIn": 394,
-        "tokensOut": 833,
-        "context": 133
-      },
-      "2026-02-17T22": {
-        "tokensIn": 227,
-        "tokensOut": 289,
-        "context": 105
-      },
-      "2026-02-17T23": {
-        "tokensIn": 487,
-        "tokensOut": 924,
-        "context": 68
-      },
-      "2026-02-18T00": {
-        "tokensIn": 111,
-        "tokensOut": 366,
-        "context": 98
-      },
-      "2026-02-18T01": {
-        "tokensIn": 247,
-        "tokensOut": 930,
-        "context": 199
-      },
-      "2026-02-18T02": {
-        "tokensIn": 122,
-        "tokensOut": 523,
-        "context": 168
-      },
-      "2026-02-18T03": {
-        "tokensIn": 497,
-        "tokensOut": 665,
-        "context": 167
-      },
-      "2026-02-18T04": {
-        "tokensIn": 234,
-        "tokensOut": 832,
-        "context": 58
-      },
-      "2026-02-18T05": {
-        "tokensIn": 467,
-        "tokensOut": 971,
-        "context": 114
-      },
-      "2026-02-18T06": {
-        "tokensIn": 430,
-        "tokensOut": 366,
-        "context": 162
-      },
-      "2026-02-18T07": {
-        "tokensIn": 179,
-        "tokensOut": 456,
-        "context": 58
-      },
-      "2026-02-18T08": {
-        "tokensIn": 237,
-        "tokensOut": 841,
-        "context": 168
-      },
-      "2026-02-18T09": {
-        "tokensIn": 459,
-        "tokensOut": 2446,
-        "context": 487
-      },
-      "2026-02-18T10": {
-        "tokensIn": 1938,
-        "tokensOut": 3386,
-        "context": 258
-      },
-      "2026-02-18T11": {
-        "tokensIn": 919,
-        "tokensOut": 2477,
-        "context": 272
-      },
-      "2026-02-18T12": {
-        "tokensIn": 1423,
-        "tokensOut": 2383,
-        "context": 637
-      },
-      "2026-02-18T13": {
-        "tokensIn": 1913,
-        "tokensOut": 3888,
-        "context": 715
+        "tokensIn": 6450,
+        "tokensOut": 10340,
+        "context": 835
       },
       "2026-02-18T14": {
-        "tokensIn": 616,
-        "tokensOut": 1678,
-        "context": 119979
+        "tokensIn": 18,
+        "tokensOut": 3742,
+        "context": 843288
       }
     },
     "total": {
-      "tokensIn": 28824,
-      "tokensOut": 55022,
-      "context": 129194
+      "tokensIn": 6468,
+      "tokensOut": 14082,
+      "context": 844123
     }
   }
 }

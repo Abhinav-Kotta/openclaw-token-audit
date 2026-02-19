@@ -1,46 +1,16 @@
 {
-  "sessions": [
-    {
-      "timestamp": "2026-02-16T22:04:04.126Z",
-      "tokensIn": 405,
-      "tokensOut": 643,
-      "context": 101,
-      "session": {
-        "id": "sim-session-1771279444126",
-        "agent": "gpt-4",
-        "channel": "webchat",
-        "started": "2026-02-16T21:06:20.467Z",
-        "simulated": true
-      }
-    }
-  ],
+  "sessions": [],
   "tools": {},
-  "agents": {
-    "gpt-4": 1
-  },
-  "channels": {
-    "webchat": 1
-  },
+  "agents": {},
+  "channels": {},
   "context": [],
   "tokenUsage": {
-    "daily": {
-      "2026-02-16": {
-        "tokensIn": 405,
-        "tokensOut": 643,
-        "context": 101
-      }
-    },
-    "hourly": {
-      "2026-02-16T22": {
-        "tokensIn": 405,
-        "tokensOut": 643,
-        "context": 101
-      }
-    },
+    "daily": {},
+    "hourly": {},
     "total": {
-      "tokensIn": 1405,
-      "tokensOut": 2643,
-      "context": 601
+      "tokensIn": 0,
+      "tokensOut": 0,
+      "context": 0
     }
   }
 }
