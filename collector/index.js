@@ -307,7 +307,7 @@ class TokenCollector {
       
       const timestamp = new Date().toISOString();
       const dateKey = timestamp.split('T')[0];
-      const hourKey = timestamp.split('T')[0] + 'T' + timestamp.split('T')[1].split(':')[0];
+      const hourKey = timestamp.split('T')[0] + 'T' + timestamp.split('T')[1].split(':')[0] + ':00';
       
       // Update session data
       this.data.sessions.push({

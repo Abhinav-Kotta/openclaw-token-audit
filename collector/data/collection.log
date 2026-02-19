@@ -394,3 +394,208 @@
 [2026-02-18T14:44:09.915Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
 [2026-02-18T14:44:09.918Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
 [2026-02-18T14:44:09.920Z] [INFO] 📈 Collected: 0 in, 105 out, 60680 context
+[2026-02-18T15:00:02.679Z] [INFO] 🌸 Token Collector initialized
+[2026-02-18T15:00:02.680Z] [INFO] 📂 Loaded existing data
+[2026-02-18T15:00:02.681Z] [INFO] 🔍 Collecting session status data...
+[2026-02-18T15:00:02.682Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-18T15:00:02.683Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-18T15:00:02.688Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-18T15:00:02.702Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-18T16:00:02.686Z] [INFO] 🌸 Token Collector initialized
+[2026-02-18T16:00:02.687Z] [INFO] 📂 Loaded existing data
+[2026-02-18T16:00:02.692Z] [INFO] 🔍 Collecting session status data...
+[2026-02-18T16:00:02.693Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-18T16:00:02.694Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-18T16:00:02.698Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-18T16:00:02.707Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-18T17:00:01.665Z] [INFO] 🌸 Token Collector initialized
+[2026-02-18T17:00:01.666Z] [INFO] 📂 Loaded existing data
+[2026-02-18T17:00:01.676Z] [INFO] 🔍 Collecting session status data...
+[2026-02-18T17:00:01.676Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-18T17:00:01.677Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-18T17:00:01.687Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-18T17:00:01.695Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-18T18:00:02.887Z] [INFO] 🌸 Token Collector initialized
+[2026-02-18T18:00:02.888Z] [INFO] 📂 Loaded existing data
+[2026-02-18T18:00:02.892Z] [INFO] 🔍 Collecting session status data...
+[2026-02-18T18:00:02.893Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-18T18:00:02.894Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-18T18:00:02.904Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-18T18:00:02.924Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-18T19:00:01.595Z] [INFO] 🌸 Token Collector initialized
+[2026-02-18T19:00:01.597Z] [INFO] 📂 Loaded existing data
+[2026-02-18T19:00:01.604Z] [INFO] 🔍 Collecting session status data...
+[2026-02-18T19:00:01.604Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-18T19:00:01.606Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-18T19:00:01.615Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-18T19:00:01.629Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-18T20:00:02.553Z] [INFO] 🌸 Token Collector initialized
+[2026-02-18T20:00:02.555Z] [INFO] 📂 Loaded existing data
+[2026-02-18T20:00:02.557Z] [INFO] 🔍 Collecting session status data...
+[2026-02-18T20:00:02.560Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-18T20:00:02.561Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-18T20:00:02.563Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-18T20:00:02.574Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-18T21:00:02.469Z] [INFO] 🌸 Token Collector initialized
+[2026-02-18T21:00:02.479Z] [INFO] 📂 Loaded existing data
+[2026-02-18T21:00:02.480Z] [INFO] 🔍 Collecting session status data...
+[2026-02-18T21:00:02.481Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-18T21:00:02.482Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-18T21:00:02.487Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-18T21:00:02.496Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-18T22:00:02.400Z] [INFO] 🌸 Token Collector initialized
+[2026-02-18T22:00:02.404Z] [INFO] 📂 Loaded existing data
+[2026-02-18T22:00:02.405Z] [INFO] 🔍 Collecting session status data...
+[2026-02-18T22:00:02.416Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-18T22:00:02.424Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-18T22:00:02.425Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-18T22:00:02.441Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-18T23:00:02.504Z] [INFO] 🌸 Token Collector initialized
+[2026-02-18T23:00:02.506Z] [INFO] 📂 Loaded existing data
+[2026-02-18T23:00:02.508Z] [INFO] 🔍 Collecting session status data...
+[2026-02-18T23:00:02.508Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-18T23:00:02.510Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-18T23:00:02.515Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-18T23:00:02.522Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T00:00:03.022Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T00:00:03.028Z] [INFO] 📂 Loaded existing data
+[2026-02-19T00:00:03.199Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T00:00:03.200Z] [INFO] 📂 Loaded existing data
+[2026-02-19T00:00:03.201Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T00:00:03.201Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T00:00:03.202Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T00:00:03.206Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T00:00:03.209Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T01:00:01.835Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T01:00:01.837Z] [INFO] 📂 Loaded existing data
+[2026-02-19T01:00:01.838Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T01:00:01.838Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T01:00:01.841Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T01:00:01.898Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T01:00:01.921Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T02:00:01.614Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T02:00:01.616Z] [INFO] 📂 Loaded existing data
+[2026-02-19T02:00:01.621Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T02:00:01.622Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T02:00:01.624Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T02:00:01.625Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T02:00:01.640Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T03:00:02.588Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T03:00:02.590Z] [INFO] 📂 Loaded existing data
+[2026-02-19T03:00:02.591Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T03:00:02.592Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T03:00:02.593Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T03:00:02.606Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T03:00:02.611Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T04:00:02.521Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T04:00:02.523Z] [INFO] 📂 Loaded existing data
+[2026-02-19T04:00:02.530Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T04:00:02.533Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T04:00:02.538Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T04:00:02.547Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T04:00:02.564Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T05:00:02.920Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T05:00:02.922Z] [INFO] 📂 Loaded existing data
+[2026-02-19T05:00:02.931Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T05:00:02.932Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T05:00:02.934Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T05:00:02.939Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T05:00:02.944Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T06:00:02.953Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T06:00:02.956Z] [INFO] 📂 Loaded existing data
+[2026-02-19T06:00:02.959Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T06:00:02.960Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T06:00:02.961Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T06:00:02.962Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T06:00:02.980Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T07:00:01.478Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T07:00:01.480Z] [INFO] 📂 Loaded existing data
+[2026-02-19T07:00:01.483Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T07:00:01.484Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T07:00:01.485Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T07:00:01.501Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T07:00:01.534Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T08:00:01.680Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T08:00:01.681Z] [INFO] 📂 Loaded existing data
+[2026-02-19T08:00:01.683Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T08:00:01.683Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T08:00:01.688Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T08:00:01.702Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T08:00:01.716Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T09:00:02.240Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T09:00:02.241Z] [INFO] 📂 Loaded existing data
+[2026-02-19T09:00:02.244Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T09:00:02.245Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T09:00:02.251Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T09:00:02.262Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T09:00:02.266Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T10:00:02.540Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T10:00:02.543Z] [INFO] 📂 Loaded existing data
+[2026-02-19T10:00:02.548Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T10:00:02.559Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T10:00:02.560Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T10:00:02.574Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T10:00:02.586Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T11:00:02.788Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T11:00:02.790Z] [INFO] 📂 Loaded existing data
+[2026-02-19T11:00:02.791Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T11:00:02.793Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T11:00:02.794Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T11:00:02.809Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T11:00:02.815Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T12:00:02.834Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T12:00:02.835Z] [INFO] 📂 Loaded existing data
+[2026-02-19T12:00:02.837Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T12:00:02.839Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T12:00:02.845Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T12:00:02.855Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T12:00:02.859Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T13:00:02.789Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T13:00:02.795Z] [INFO] 📂 Loaded existing data
+[2026-02-19T13:00:02.796Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T13:00:02.797Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T13:00:02.798Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T13:00:02.806Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T13:00:02.811Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T14:00:02.854Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T14:00:02.869Z] [INFO] 📂 Loaded existing data
+[2026-02-19T14:00:02.875Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T14:00:02.881Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T14:00:02.885Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T14:00:02.908Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T14:00:02.922Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T15:00:02.820Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T15:00:02.821Z] [INFO] 📂 Loaded existing data
+[2026-02-19T15:00:02.822Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T15:00:02.823Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T15:00:02.826Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T15:00:02.827Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T15:00:02.834Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T16:00:02.956Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T16:00:02.957Z] [INFO] 📂 Loaded existing data
+[2026-02-19T16:00:02.958Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T16:00:02.959Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T16:00:02.959Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T16:00:02.961Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T16:00:02.968Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T17:00:02.106Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T17:00:02.114Z] [INFO] 📂 Loaded existing data
+[2026-02-19T17:00:02.125Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T17:00:02.125Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T17:00:02.143Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T17:00:02.145Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T17:00:02.152Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T18:00:02.803Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T18:00:02.806Z] [INFO] 📂 Loaded existing data
+[2026-02-19T18:00:02.807Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T18:00:02.810Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T18:00:02.811Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T18:00:02.824Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T18:00:02.834Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context
+[2026-02-19T19:00:02.015Z] [INFO] 🌸 Token Collector initialized
+[2026-02-19T19:00:02.023Z] [INFO] 📂 Loaded existing data
+[2026-02-19T19:00:02.024Z] [INFO] 🔍 Collecting session status data...
+[2026-02-19T19:00:02.033Z] [INFO] 📂 Found logs at: /home/ubuntu/.openclaw/logs
+[2026-02-19T19:00:02.039Z] [INFO] 📡 Fetching real session data from OpenClaw gateway...
+[2026-02-19T19:00:02.041Z] [INFO] 📂 Reading session data from: 4a270216-f664-4afd-b562-d9e938e2237d.jsonl
+[2026-02-19T19:00:02.053Z] [INFO] 📈 Collected: 2 in, 366 out, 80428 context

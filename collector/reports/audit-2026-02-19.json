@@ -1,0 +1,53 @@
+{
+  "date": "2026-02-19",
+  "timestamp": "2026-02-19T00:00:03.029Z",
+  "daily": {
+    "tokensIn": 0,
+    "tokensOut": 0,
+    "context": 0
+  },
+  "total": {
+    "tokensIn": 28842,
+    "tokensOut": 58316,
+    "context": 853046
+  },
+  "agents": {
+    "claude-haiku-4-5": 13,
+    "claude-sonnet-4-5": 1,
+    "tmom-frontend": 1,
+    "ollama-llama3.3": 1,
+    "gpt-4": 8,
+    "claude-sonnet": 4,
+    "gpt-3.5-turbo": 6,
+    "claude-haiku": 3,
+    "claude-opus": 4
+  },
+  "channels": {
+    "webchat": 9,
+    "whatsapp": 1,
+    "slack": 7,
+    "telegram": 6,
+    "discord": 3,
+    "api": 2,
+    "cli": 2,
+    "main": 11
+  },
+  "tools": {
+    "web_search": 8,
+    "memory_search": 12,
+    "code_execution": 5,
+    "file_operations": 7,
+    "image_analysis": 3,
+    "message": 15,
+    "browser": 2
+  },
+  "sessionCount": 41,
+  "summary": {
+    "dailyTotal": 0,
+    "totalTokens": 940204,
+    "averageTokensPerSession": 22932,
+    "topAgent": "claude-haiku-4-5",
+    "topChannel": "main",
+    "topTool": "message"
+  }
+}
