@@ -103,110 +103,6 @@
         "started": "2026-02-18T14:43:32.656Z",
         "simulated": false
       }
-    },
-    {
-      "timestamp": "2026-02-18T14:50:16.636Z",
-      "tokensIn": 2,
-      "tokensOut": 366,
-      "context": 80428,
-      "session": {
-        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
-        "agent": "claude-haiku-4-5",
-        "channel": "main",
-        "started": "2026-02-18T14:43:32.656Z",
-        "simulated": false
-      }
-    },
-    {
-      "timestamp": "2026-02-18T14:50:16.636Z",
-      "tokensIn": 2,
-      "tokensOut": 366,
-      "context": 80428,
-      "session": {
-        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
-        "agent": "claude-haiku-4-5",
-        "channel": "main",
-        "started": "2026-02-18T14:43:32.656Z",
-        "simulated": false
-      }
-    },
-    {
-      "timestamp": "2026-02-18T14:50:16.636Z",
-      "tokensIn": 2,
-      "tokensOut": 366,
-      "context": 80428,
-      "session": {
-        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
-        "agent": "claude-haiku-4-5",
-        "channel": "main",
-        "started": "2026-02-18T14:43:32.656Z",
-        "simulated": false
-      }
-    },
-    {
-      "timestamp": "2026-02-18T14:50:16.636Z",
-      "tokensIn": 2,
-      "tokensOut": 366,
-      "context": 80428,
-      "session": {
-        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
-        "agent": "claude-haiku-4-5",
-        "channel": "main",
-        "started": "2026-02-18T14:43:32.656Z",
-        "simulated": false
-      }
-    },
-    {
-      "timestamp": "2026-02-18T14:50:16.636Z",
-      "tokensIn": 2,
-      "tokensOut": 366,
-      "context": 80428,
-      "session": {
-        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
-        "agent": "claude-haiku-4-5",
-        "channel": "main",
-        "started": "2026-02-18T14:43:32.656Z",
-        "simulated": false
-      }
-    },
-    {
-      "timestamp": "2026-02-18T14:50:16.636Z",
-      "tokensIn": 2,
-      "tokensOut": 366,
-      "context": 80428,
-      "session": {
-        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
-        "agent": "claude-haiku-4-5",
-        "channel": "main",
-        "started": "2026-02-18T14:43:32.656Z",
-        "simulated": false
-      }
-    },
-    {
-      "timestamp": "2026-02-18T14:50:16.636Z",
-      "tokensIn": 2,
-      "tokensOut": 366,
-      "context": 80428,
-      "session": {
-        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
-        "agent": "claude-haiku-4-5",
-        "channel": "main",
-        "started": "2026-02-18T14:43:32.656Z",
-        "simulated": false
-      }
-    },
-    {
-      "timestamp": "2026-02-18T14:50:16.636Z",
-      "tokensIn": 2,
-      "tokensOut": 366,
-      "context": 80428,
-      "session": {
-        "id": "4a270216-f664-4afd-b562-d9e938e2237d",
-        "agent": "claude-haiku-4-5",
-        "channel": "main",
-        "started": "2026-02-18T14:43:32.656Z",
-        "simulated": false
-      }
     }
   ],
   "tools": {
@@ -219,7 +115,7 @@
     "browser": 2
   },
   "agents": {
-    "claude-haiku-4-5": 13,
+    "claude-haiku-4-5": 5,
     "claude-sonnet-4-5": 1,
     "tmom-frontend": 1,
     "ollama-llama3.3": 1
@@ -228,7 +124,7 @@
     "webchat": 2,
     "whatsapp": 1,
     "slack": 2,
-    "main": 11
+    "main": 3
   },
   "context": [],
   "tokenUsage": {
@@ -239,27 +135,57 @@
         "context": 835
       },
       "2026-02-18": {
-        "tokensIn": 18,
-        "tokensOut": 3742,
-        "context": 843288
+        "tokensIn": 2,
+        "tokensOut": 814,
+        "context": 199864
       }
     },
     "hourly": {
-      "2026-02-17T18:00": {
-        "tokensIn": 6450,
-        "tokensOut": 10340,
-        "context": 835
+      "2026-02-17T18:40:00": {
+        "tokensIn": 1250,
+        "tokensOut": 2100,
+        "context": 150
       },
-      "2026-02-18T14:00": {
-        "tokensIn": 18,
-        "tokensOut": 3742,
-        "context": 843288
+      "2026-02-17T18:30:00": {
+        "tokensIn": 890,
+        "tokensOut": 1540,
+        "context": 120
+      },
+      "2026-02-17T18:20:00": {
+        "tokensIn": 2100,
+        "tokensOut": 3200,
+        "context": 280
+      },
+      "2026-02-17T18:15:00": {
+        "tokensIn": 1450,
+        "tokensOut": 2300,
+        "context": 190
+      },
+      "2026-02-17T18:05:00": {
+        "tokensIn": 760,
+        "tokensOut": 1200,
+        "context": 95
+      },
+      "2026-02-18T14:43:00": {
+        "tokensIn": 0,
+        "tokensOut": 343,
+        "context": 58756
+      },
+      "2026-02-18T14:44:00": {
+        "tokensIn": 0,
+        "tokensOut": 105,
+        "context": 60680
+      },
+      "2026-02-18T14:50:00": {
+        "tokensIn": 2,
+        "tokensOut": 366,
+        "context": 80428
       }
     },
     "total": {
-      "tokensIn": 6468,
-      "tokensOut": 14082,
-      "context": 844123
+      "tokensIn": 6452,
+      "tokensOut": 11154,
+      "context": 200699
     }
   }
 }

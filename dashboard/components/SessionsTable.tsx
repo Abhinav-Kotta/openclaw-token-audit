@@ -233,7 +233,7 @@ export default function SessionsTable({ sessions }: SessionsTableProps) {
             {sortedSessions.length > 0 ? (
               sortedSessions.slice(0, 10).map((session, index) => (
                 <SessionRow
-                  key={session.session.id}
+                  key={`${session.timestamp}-${session.session.id}`}
                   session={session}
                   index={index}
                 />

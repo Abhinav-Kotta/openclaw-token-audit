@@ -96,10 +96,30 @@
       }
     },
     "hourly": {
-      "2026-02-17T18:00": {
-        "tokensIn": 6450,
-        "tokensOut": 10340,
-        "context": 835
+      "2026-02-17T18:40:00": {
+        "tokensIn": 1250,
+        "tokensOut": 2100,
+        "context": 150
+      },
+      "2026-02-17T18:30:00": {
+        "tokensIn": 890,
+        "tokensOut": 1540,
+        "context": 120
+      },
+      "2026-02-17T18:20:00": {
+        "tokensIn": 2100,
+        "tokensOut": 3200,
+        "context": 280
+      },
+      "2026-02-17T18:15:00": {
+        "tokensIn": 1450,
+        "tokensOut": 2300,
+        "context": 190
+      },
+      "2026-02-17T18:05:00": {
+        "tokensIn": 760,
+        "tokensOut": 1200,
+        "context": 95
       }
     },
     "total": {

@@ -309,6 +309,20 @@ class TokenCollector {
       const dateKey = timestamp.split('T')[0];
       const hourKey = timestamp.split('T')[0] + 'T' + timestamp.split('T')[1].split(':')[0] + ':00';
       
+      // Check for duplicate session (same session ID and similar timestamp)
+      const sessionId = sessionData.session?.id;
+      const isDuplicate = this.data.sessions.some(existing => {
+        const existingId = existing.session?.id;
+        const timeDiff = Math.abs(new Date(existing.timestamp) - new Date(timestamp));
+        // Consider it a duplicate if same ID and within 1 minute
+        return existingId === sessionId && timeDiff < 60000;
+      });
+      
+      if (isDuplicate) {
+        await this.log(`⏭️  Skipping duplicate session: ${sessionId}`);
+        return null;
+      }
+      
       // Update session data
       this.data.sessions.push({
         timestamp,
