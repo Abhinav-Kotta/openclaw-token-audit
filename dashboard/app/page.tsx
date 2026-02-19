@@ -107,15 +107,15 @@ export default function DashboardPage() {
     .filter(([date]) => {
       // Only include valid dates
       try {
-        new Date(date);
-        return true;
+        const d = new Date(date);
+        return !isNaN(d.getTime());
       } catch {
         return false;
       }
     })
     .map(([date, usage]) => ({
       date,
-      dateISO: date,
+      dateISO: date.includes('T') ? date : `${date}T00:00:00.000Z`, // Ensure full ISO format
       tokensIn: usage.tokensIn,
       tokensOut: usage.tokensOut,
       total: usage.tokensIn + usage.tokensOut,
