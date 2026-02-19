@@ -39,97 +39,6 @@ function getCollectorDataPath(): string {
   throw new Error('Collector data file not found');
 }
 
-function getMockData(): TokenData {
-  return {
-    sessions: [
-      {
-        timestamp: new Date().toISOString(),
-        tokensIn: 1250,
-        tokensOut: 2100,
-        context: 150,
-        session: {
-          id: 'demo-session-' + Date.now(),
-          agent: 'claude-3-sonnet',
-          channel: 'webchat',
-          started: new Date(Date.now() - 3600000).toISOString(),
-          simulated: true
-        }
-      },
-      {
-        timestamp: new Date(Date.now() - 1800000).toISOString(),
-        tokensIn: 890,
-        tokensOut: 1540,
-        context: 120,
-        session: {
-          id: 'demo-session-' + (Date.now() - 1800000),
-          agent: 'gpt-4',
-          channel: 'discord',
-          started: new Date(Date.now() - 5400000).toISOString(),
-          simulated: true
-        }
-      }
-    ],
-    tools: {
-      'web_search': 15,
-      'code_execution': 8,
-      'file_operations': 12,
-      'image_analysis': 5
-    },
-    agents: {
-      'claude-3-sonnet': 12,
-      'gpt-4': 8,
-      'gpt-3.5-turbo': 5
-    },
-    channels: {
-      'webchat': 15,
-      'discord': 7,
-      'slack': 3
-    },
-    context: [],
-    tokenUsage: {
-      daily: (() => {
-        const daily: Record<string, { tokensIn: number; tokensOut: number; context: number }> = {};
-        const today = new Date();
-        
-        for (let i = 6; i >= 0; i--) {
-          const date = new Date(today);
-          date.setDate(date.getDate() - i);
-          const dateStr = date.toISOString().split('T')[0];
-          
-          daily[dateStr] = {
-            tokensIn: Math.floor(Math.random() * 2000) + 1000,
-            tokensOut: Math.floor(Math.random() * 3000) + 1500,
-            context: Math.floor(Math.random() * 500) + 100
-          };
-        }
-        return daily;
-      })(),
-      hourly: (() => {
-        const hourly: Record<string, { tokensIn: number; tokensOut: number; context: number }> = {};
-        const now = new Date();
-        
-        for (let i = 23; i >= 0; i--) {
-          const hour = new Date(now);
-          hour.setHours(hour.getHours() - i);
-          const hourStr = hour.toISOString().substr(0, 13);
-          
-          hourly[hourStr] = {
-            tokensIn: Math.floor(Math.random() * 500) + 200,
-            tokensOut: Math.floor(Math.random() * 800) + 300,
-            context: Math.floor(Math.random() * 100) + 20
-          };
-        }
-        return hourly;
-      })(),
-      total: {
-        tokensIn: 45230,
-        tokensOut: 78940,
-        context: 12150
-      }
-    }
-  };
-}
-
 export async function GET(request: NextRequest) {
   try {
     let data: TokenData;
@@ -190,8 +99,8 @@ export async function GET(request: NextRequest) {
         }
       };
     } catch (error) {
-      console.log('Using mock data due to error:', error);
-      data = getMockData();
+      console.error('Failed to load real data:', error);
+      throw new Error('No real data available. Please ensure the collector is running and has collected data.');
     }
 
     const response = NextResponse.json(data);

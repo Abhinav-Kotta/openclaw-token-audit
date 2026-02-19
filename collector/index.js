@@ -137,9 +137,7 @@ class TokenCollector {
       }
       
       if (!sessionData) {
-        // Generate realistic simulation data based on time patterns
-        sessionData = this.generateSimulatedData();
-        await this.log('📊 Using simulated data (no data sources accessible)', 'warn');
+        await this.log('⚠️  No real data sources accessible - skipping collection', 'warn');
       }
       
       return sessionData;
@@ -300,41 +298,6 @@ class TokenCollector {
       await this.log(`❌ Transcript collection error: ${error.message}`, 'warn');
       return null;
     }
-  }
-
-  generateSimulatedData() {
-    const hour = new Date().getHours();
-    const isBusinessHours = hour >= 9 && hour <= 17;
-    const multiplier = isBusinessHours ? 2 : 0.5;
-    
-    // Generate realistic token usage patterns
-    const baseTokensIn = Math.floor((Math.random() * 800 + 200) * multiplier);
-    const baseTokensOut = Math.floor((Math.random() * 1500 + 500) * multiplier);
-    const baseContext = Math.floor((Math.random() * 300 + 100) * multiplier);
-    
-    return {
-      tokensIn: baseTokensIn,
-      tokensOut: baseTokensOut,
-      context: baseContext,
-      session: {
-        id: `sim-session-${Date.now()}`,
-        agent: this.getRandomAgent(),
-        channel: this.getRandomChannel(),
-        started: new Date(Date.now() - Math.random() * 3600000).toISOString(),
-        simulated: true
-      },
-      timestamp: new Date().toISOString()
-    };
-  }
-
-  getRandomAgent() {
-    const agents = ['claude-sonnet', 'claude-haiku', 'claude-opus', 'gpt-4', 'gpt-3.5-turbo'];
-    return agents[Math.floor(Math.random() * agents.length)];
-  }
-
-  getRandomChannel() {
-    const channels = ['webchat', 'discord', 'slack', 'api', 'cli', 'telegram'];
-    return channels[Math.floor(Math.random() * channels.length)];
   }
 
   async collectMetrics() {
