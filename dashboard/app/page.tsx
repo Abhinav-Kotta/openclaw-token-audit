@@ -250,14 +250,15 @@ export default function DashboardPage() {
         </div>
 
         {/* Sessions Table */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="mt-12"
-        >
-          <SessionsTable sessions={sessions} />
-        </motion.div>
+        <div className="mt-32 pt-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
+            <SessionsTable sessions={sessions} />
+          </motion.div>
+        </div>
       </main>
     </div>
   );
